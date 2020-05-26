@@ -27,4 +27,9 @@ public class SeleniumDriver {
         }
         return driver;
     }
+
+    public static void Closed(){
+        driver.quit();
+    }
+
 }
