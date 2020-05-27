@@ -3,6 +3,8 @@ package page.shouyinqu;
 import org.openqa.selenium.By;
 
 public class tuikuan {
+    //退款
+    public static By tuikuanTital=By.xpath("//*[@id=\"refundList\"]/div[1]/div/div[1]");
     //订单号
     public static By dingdanhao= By.xpath("//*[@id=\"refundList\"]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[1]/div");
     //退款操作

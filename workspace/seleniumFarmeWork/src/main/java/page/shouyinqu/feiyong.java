@@ -3,6 +3,7 @@ package page.shouyinqu;
 import org.openqa.selenium.By;
 
 public class feiyong {
+
     //日结
     public static By rijie= By.xpath("//*[@id=\"tab-rijie\"]");
     //统计

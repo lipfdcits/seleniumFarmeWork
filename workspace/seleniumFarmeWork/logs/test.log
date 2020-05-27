@@ -1,0 +1,12 @@
+[INFO ] 2020-05-27 17:00:06,623 method:com.lpf.log4j.LoggerControler.info(LoggerControler.java:35)
+这是info
+[WARN ] 2020-05-27 17:00:06,625 method:com.lpf.log4j.LoggerControler.warn(LoggerControler.java:41)
+这是warn
+[ERROR] 2020-05-27 17:00:06,625 method:com.lpf.log4j.LoggerControler.err(LoggerControler.java:44)
+这是err
+[INFO ] 2020-05-27 17:02:49,658 method:com.lpf.log4j.LoggerControler.info(LoggerControler.java:35)
+这是info
+[WARN ] 2020-05-27 17:02:49,660 method:com.lpf.log4j.LoggerControler.warn(LoggerControler.java:41)
+这是warn
+[ERROR] 2020-05-27 17:02:49,660 method:com.lpf.log4j.LoggerControler.err(LoggerControler.java:44)
+这是err

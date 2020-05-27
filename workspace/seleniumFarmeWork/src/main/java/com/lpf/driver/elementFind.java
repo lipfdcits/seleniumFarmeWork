@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
 //查找元素(显示等待)
-public class findElement extends openBrowser {
+public class elementFind extends openBrowser {
     public static WebElement findElement(By by){
         WebElement element=null;
         try {

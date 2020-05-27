@@ -7,13 +7,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Action extends openBrowser {
+    //页面全屏
+    public static void maxSize(){
+        driver.manage().window().maximize();
+    }
     //点击
     public static void click(By by){
-        findElement.findElement(by).click();
+        elementFind.findElement(by).click();
     }
     //文本框输入
     public static void sendText(By by,String text){
-        WebElement element= findElement.findElement(by);
+        WebElement element= elementFind.findElement(by);
         element.clear();
         element.sendKeys(text);
     }
@@ -34,11 +38,11 @@ public class Action extends openBrowser {
     }
     //获取单个文本
     public static String getText(By by){
-        return findElement.findElement(by).getText();
+        return elementFind.findElement(by).getText();
     }
     //获取多个文本值
     public static List<String> getTexts(By by){
-        List<WebElement> elementsList = findElement.findElements(by);
+        List<WebElement> elementsList = elementFind.findElements(by);
         List<String> list = new ArrayList<String>();
         for (int i = 0; i < elementsList.size(); i++) {
             String text=elementsList.get(i).getText();

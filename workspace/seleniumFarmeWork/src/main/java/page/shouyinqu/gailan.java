@@ -12,7 +12,7 @@ public class gailan {
     //订单编号(首行)
     public static By dingdanbianhao= By.xpath("//*[@id=\"cashMain\"]/div[1]/div[2]/div[2]/div/div[3]/table/tbody/tr[1]/td[1]");
     //查询
-    public static By chaxun_gailan= By.xpath("//*[@id=\"cashMain\"]/div[1]/div[2]/div[1]/button");
+    public static By chaxun= By.xpath("//*[@id=\"cashMain\"]/div[1]/div[2]/div[1]/button");
     //退号
     public static By tuihao= By.xpath("//*[@id=\"cashMain\"]/div[1]/div[2]/div[2]/div/div[3]/table/tbody/tr[1]/td[11]/div/div[1]");
     //打印

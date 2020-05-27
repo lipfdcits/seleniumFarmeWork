@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 
 public class shoukuan {
     //收款
+    public static By shoukuan=By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[1]");
+    //收款按钮
     public static By shoukuanButton= By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[13]/div/div");
     //查询
     public static By chaxun= By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[2]/button");

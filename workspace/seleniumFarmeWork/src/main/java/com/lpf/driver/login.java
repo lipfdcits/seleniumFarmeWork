@@ -5,9 +5,11 @@ import page.loginPage;
 
 public class login extends openBrowser {
 
-    public static void loginAction() throws InterruptedException {
+    public static void loginAction(){
         //打开浏览器
         WebDriver driver = openBrowser.open("chrome");
+        //页面全屏
+        Action.maxSize();
         //输入网址
         Action.get("https://testsaas.qingxiaoguo.com");
         //定位用户名输入框并输入

@@ -1,7 +1,7 @@
 package com.lpf;
 
 import com.lpf.driver.openBrowser;
-import com.lpf.driver.findElement;
+import com.lpf.driver.elementFind;
 import com.lpf.driver.Action;
 import com.lpf.driver.login;
 import org.openqa.selenium.By;
@@ -29,7 +29,7 @@ public class actionTest {
     public static void getText() throws InterruptedException {
         openBrowser.open("edge");
         Action.get("www.baidu.com");
-        String text = findElement.findElement(By.xpath("//*[@id=\"s-top-left\"]/a[1]")).getText();
+        String text = elementFind.findElement(By.xpath("//*[@id=\"s-top-left\"]/a[1]")).getText();
         System.out.println(text);
         Action.closed();
     }
@@ -37,7 +37,7 @@ public class actionTest {
     public static void getTexts() throws InterruptedException {
         openBrowser.open("edge");
         Action.get("www.baidu.com");
-        List<WebElement> list = findElement.findElements(By.xpath("//*[@id=\"s-top-left\"]/a"));
+        List<WebElement> list = elementFind.findElements(By.xpath("//*[@id=\"s-top-left\"]/a"));
         for (int i = 0; i < list.size(); i++) {
             String text = list.get(i).getText();
             System.out.println(text);
