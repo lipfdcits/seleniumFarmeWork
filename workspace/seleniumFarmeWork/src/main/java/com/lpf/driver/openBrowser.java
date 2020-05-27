@@ -6,7 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 //打开浏览器
-public class SeleniumDriver {
+public class openBrowser {
     public static WebDriver driver;
     public static WebDriver open(String browser){
         String path=System.getProperty("user.dir");
@@ -28,9 +28,6 @@ public class SeleniumDriver {
         return driver;
     }
 
-    public static void Closed() throws InterruptedException {
-        Thread.sleep(3000);
-        driver.quit();
-    }
+
 
 }

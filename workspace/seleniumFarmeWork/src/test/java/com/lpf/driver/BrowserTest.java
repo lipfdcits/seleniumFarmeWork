@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 public class BrowserTest {
     @Test
     public void openBrowser() throws InterruptedException {
-        SeleniumDriver.open("edge");
+        openBrowser.open("edge");
         Thread.sleep(3000);
-        SeleniumDriver.Closed();
+        Action.closed();
     }
 }
