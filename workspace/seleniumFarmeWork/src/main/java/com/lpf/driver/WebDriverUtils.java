@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+//查找元素(显示等待)
 public class WebDriverUtils extends SeleniumDriver {
     public static WebElement findElement(By by){
         WebElement element=null;
