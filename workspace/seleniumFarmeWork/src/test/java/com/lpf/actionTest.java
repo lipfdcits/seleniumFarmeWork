@@ -13,7 +13,7 @@ import java.util.List;
 public class actionTest {
     @Test
     public static void action() throws InterruptedException {
-        openBrowser.open("chrome");
+        openBrowser.open("chrome111");
         Action.get("www.baidu.com");
         Action.sendText(By.name("wd"),"selenium");
         Action.click(By.id("su"));

@@ -5,8 +5,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+
 //打开浏览器
 public class openBrowser {
+    final static LoggerControler log = LoggerControler.getlogger(openBrowser.class);
     public static WebDriver driver;
     public static WebDriver open(String browser){
         String path=System.getProperty("user.dir");
@@ -23,7 +25,7 @@ public class openBrowser {
             System.setProperty("webdriver.edge.driver",path+"/driver/msedgedriver.exe");
             driver=new EdgeDriver();
         }else{
-            System.err.println("您输入有误:"+browser);
+            log.err("您传入的浏览器名称有误"+browser);
         }
         return driver;
     }

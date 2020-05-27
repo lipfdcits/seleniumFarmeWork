@@ -10,3 +10,5 @@
 这是warn
 [ERROR] 2020-05-27 17:02:49,660 method:com.lpf.log4j.LoggerControler.err(LoggerControler.java:44)
 这是err
+[ERROR] 2020-05-27 17:17:57,379 method:com.lpf.driver.LoggerControler.err(LoggerControler.java:43)
+您传入的浏览器名称有误chrome111
