@@ -28,7 +28,8 @@ public class SeleniumDriver {
         return driver;
     }
 
-    public static void Closed(){
+    public static void Closed() throws InterruptedException {
+        Thread.sleep(3000);
         driver.quit();
     }
 

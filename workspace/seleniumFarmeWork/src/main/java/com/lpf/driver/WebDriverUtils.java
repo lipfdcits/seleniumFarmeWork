@@ -17,6 +17,5 @@ public class WebDriverUtils extends SeleniumDriver {
         }
         element=driver.findElement(by);
         return  element;
-
     }
 }
