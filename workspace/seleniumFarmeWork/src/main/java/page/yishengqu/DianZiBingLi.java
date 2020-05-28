@@ -2,7 +2,9 @@ package page.yishengqu;
 
 import org.openqa.selenium.By;
 
-public class dianzibingli {
+public class DianZiBingLi {
+    //基本信息
+    public static By jibenxinxi=By.xpath("//*[@id=\"pane-record\"]/form/div[1]/div[1]");
     //姓名
     public static By name= By.xpath("//*[@id=\"pane-record\"]/form/div[1]/div[2]/div[1]/div/div/div/div[1]/input");
     //性别

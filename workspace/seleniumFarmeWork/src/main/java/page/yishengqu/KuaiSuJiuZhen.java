@@ -2,7 +2,7 @@ package page.yishengqu;
 
 import org.openqa.selenium.By;
 
-public class kuaisujiuzhen {
+public class KuaiSuJiuZhen {
     //电子病历
     public static By dianzibingli= By.xpath("//*[@id=\"tab-record\"]");
     //西药处方
@@ -21,4 +21,5 @@ public class kuaisujiuzhen {
     public static By baocun= By.xpath("//*[@id=\"pane-record\"]/form/div[2]/div[1]/div[8]/button");
     //完成就诊
     public static By wanchengjiuzhen= By.xpath("//*[@id=\"treating\"]/div[1]/div/div[1]/div");
+
 }

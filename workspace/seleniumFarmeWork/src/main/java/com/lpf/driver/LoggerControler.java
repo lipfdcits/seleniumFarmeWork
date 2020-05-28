@@ -30,16 +30,21 @@ public class LoggerControler {
         return logg;
     }
 
-    public void info(String msg){
+    public void info(String msg) {
         logger.info(msg);
     }
-    public void debug(String msg){
+
+    public void debug(String msg) {
         logger.debug(msg);
     }
-    public void warn(String msg){
+
+    public void warn(String msg) {
         logger.warn(msg);
     }
-    public void err(String msg){
+
+    public void err(String msg) {
         logger.error(msg);
     }
+
+
 }

@@ -13,7 +13,7 @@ import java.util.List;
 public class actionTest {
     @Test
     public static void action() throws InterruptedException {
-        openBrowser.open("chrome111");
+        openBrowser.open("chrome");
         Action.get("www.baidu.com");
         Action.sendText(By.name("wd"),"selenium");
         Action.click(By.id("su"));
@@ -22,7 +22,7 @@ public class actionTest {
 
     @Test
     public static void login() throws InterruptedException {
-        login.loginAction();
+        login.loginAction("chrome","https://testsaas.qingxiaoguo.com ","15110403429","123456");
     }
 
     @Test
