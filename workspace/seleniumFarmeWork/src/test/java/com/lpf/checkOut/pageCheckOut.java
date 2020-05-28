@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import page.chuangkouqu.*;
 import page.firstPage;
+import page.kucunguanli.ShouYeGaiLan;
 import page.selectHospital;
 import page.shouyinqu.*;
 import page.yishengqu.*;
@@ -61,6 +62,7 @@ public class pageCheckOut {
             PageCheckOutUtil.checkout("今日就诊",firstPage.jinrijiuzhen, jinrijiuzhen.kuaisujiuzhen,"快速就诊");
         }else if (panduan==false){
             Action.click(firstPage.yishengqu);
+            Thread.sleep(1000);
             //点击今日就诊,查看页面跳转
             PageCheckOutUtil.checkout("今日就诊",firstPage.jinrijiuzhen, jinrijiuzhen.kuaisujiuzhen,"快速就诊");
         }else {
@@ -74,6 +76,7 @@ public class pageCheckOut {
         PageCheckOutUtil.checkout("徇证医学",firstPage.xunzhengyixue, XunZhengYixue.yongyaozhilan,"用药指南");
         //点击健康档案
         PageCheckOutUtil.checkout("健康档案",firstPage.jiankangdangan, JianKangDangAn.jiankangdangan,"健康档案");
+
     }
 
     //窗口区页面校验
@@ -85,6 +88,7 @@ public class pageCheckOut {
             PageCheckOutUtil.checkout("订单",firstPage.dingdan, DingDan.tuikuandingdan,"退款订单>");
         }else if (panduan==false){
             Action.click(firstPage.chuangkouqu);
+            Thread.sleep(1000);
             //点击订单,查看页面跳转
             PageCheckOutUtil.checkout("订单",firstPage.dingdan, DingDan.tuikuandingdan,"退款订单>");
         }else {
@@ -103,9 +107,23 @@ public class pageCheckOut {
         PageCheckOutUtil.checkout("检验",firstPage.jianyan,JianYan.jianyan,"检验");
         //点击理疗
         PageCheckOutUtil.checkout("理疗",firstPage.liliao,LiLiao.liliao,"理疗");
-
-
-
     }
+    //库存管理页面校验
+    @Test
+    public void KuCunGuanLiPageCHeckOut() throws InterruptedException {
+        boolean panduan=elementFind.findElement(firstPage.shouyegailan).isDisplayed();
+        if(panduan==true) {
+            //点击订单,查看页面跳转
+            PageCheckOutUtil.checkout("首页概览",firstPage.shouyegailan, ShouYeGaiLan.jinrirukudan,"今日入库单");
+        }else if (panduan==false){
+            Action.click(firstPage.kucunguanli);
+            Thread.sleep(1000);
+            //点击订单,查看页面跳转
+            PageCheckOutUtil.checkout("首页概览",firstPage.shouyegailan, ShouYeGaiLan.jinrirukudan,"今日入库单");
+        }else {
+            System.err.println();
+        }
+    }
+
 
 }

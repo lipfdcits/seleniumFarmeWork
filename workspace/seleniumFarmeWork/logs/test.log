@@ -12,3 +12,9 @@
 这是err
 [ERROR] 2020-05-27 17:17:57,379 method:com.lpf.driver.LoggerControler.err(LoggerControler.java:43)
 您传入的浏览器名称有误chrome111
+[INFO ] 2020-05-28 14:19:21,222 method:com.lpf.driver.LoggerControler.info(LoggerControler.java:34)
+这是info
+[WARN ] 2020-05-28 14:19:21,224 method:com.lpf.driver.LoggerControler.warn(LoggerControler.java:42)
+这是warn
+[ERROR] 2020-05-28 14:19:21,224 method:com.lpf.driver.LoggerControler.err(LoggerControler.java:46)
+这是err

@@ -8,8 +8,6 @@ public class log4jTest {
     @Test
     public void testCase(){
         log.info("这是info");
-        log.debug("这是debug");
-        log.warn("这是warn");
-        log.err("这是err");
+
     }
 }

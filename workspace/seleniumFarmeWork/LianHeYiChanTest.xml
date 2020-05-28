@@ -3,10 +3,7 @@
 <suite name="Default Suite">
   <test name="seleniumFarmeWork">
     <classes>
-      <class name="com.lpf.actionTest">
-        <methods>
-          <include name="action"/>
-        </methods>
+      <class name="com.lpf.checkOut.pageCheckOut">
       </class> <!-- com.lpf.actionTest -->
     </classes>
   </test> <!-- seleniumFarmeWork -->
