@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import page.chuangkouqu.DingDan;
+import page.chuangkouqu.*;
 import page.firstPage;
 import page.selectHospital;
 import page.shouyinqu.*;
@@ -81,15 +81,29 @@ public class pageCheckOut {
     public void chuangkouquPageCheckOut() throws InterruptedException {
         boolean panduan=elementFind.findElement(firstPage.dingdan).isDisplayed();
         if(panduan==true) {
-            //点击今日就诊,查看页面跳转
+            //点击订单,查看页面跳转
             PageCheckOutUtil.checkout("订单",firstPage.dingdan, DingDan.tuikuandingdan,"退款订单>");
         }else if (panduan==false){
             Action.click(firstPage.chuangkouqu);
-            //点击今日就诊,查看页面跳转
+            //点击订单,查看页面跳转
             PageCheckOutUtil.checkout("订单",firstPage.dingdan, DingDan.tuikuandingdan,"退款订单>");
         }else {
             System.err.println();
         }
+
+        //点击零售,查看页面跳转
+        PageCheckOutUtil.checkout("零售",firstPage.lingshou, LingShou.xinkaidingdan,"新开订单");
+        //点击发药
+        PageCheckOutUtil.checkout("发药",firstPage.fayao, FaYao.dingdanhao,"订单号");
+        //点击针剂
+        PageCheckOutUtil.checkout("针剂",firstPage.zhenji, ZhenJi.zhenji,"针剂");
+        //点击检查
+        PageCheckOutUtil.checkout("检查",firstPage.jiancha, JianCha.jiancha,"检查");
+        //点击检验
+        PageCheckOutUtil.checkout("检验",firstPage.jianyan,JianYan.jianyan,"检验");
+        //点击理疗
+        PageCheckOutUtil.checkout("理疗",firstPage.liliao,LiLiao.liliao,"理疗");
+
 
 
     }
