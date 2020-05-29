@@ -2,7 +2,7 @@ package page.shouyinqu;
 
 import org.openqa.selenium.By;
 
-public class shoukuan {
+public class ShouKuan {
     //收款
     public static By shoukuan=By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[1]");
     //收款按钮

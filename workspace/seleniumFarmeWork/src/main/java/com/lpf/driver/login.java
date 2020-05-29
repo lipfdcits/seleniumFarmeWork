@@ -5,7 +5,7 @@ import page.loginPage;
 
 public class login extends openBrowser {
 
-    public static void loginAction(String browser,String url,String user,String pwd){
+    public static void loginAction(String browser,String url,String user,String pwd) throws InterruptedException {
         //打开浏览器
         WebDriver driver = openBrowser.open(browser);
         //页面全屏

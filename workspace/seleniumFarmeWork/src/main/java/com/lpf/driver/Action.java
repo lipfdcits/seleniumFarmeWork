@@ -12,8 +12,9 @@ public class Action extends openBrowser {
         driver.manage().window().maximize();
     }
     //点击
-    public static void click(By by){
+    public static void click(By by) throws InterruptedException {
         elementFind.findElement(by).click();
+        Thread.sleep(1000);
     }
     //文本框输入
     public static void sendText(By by,String text){

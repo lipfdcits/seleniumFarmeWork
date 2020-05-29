@@ -9,7 +9,6 @@ public class PageCheckOutUtil {
     public static void checkout(String pageName,By clickElement,By secondElement,String expectText) throws InterruptedException {
 
         Action.click(clickElement);
-        Thread.sleep(1000);
         String text = elementFind.findElement(secondElement).getText();
         if(text.equals(expectText)){
 

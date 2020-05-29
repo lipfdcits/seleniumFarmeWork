@@ -2,7 +2,7 @@ package page.shouyinqu;
 
 import org.openqa.selenium.By;
 
-public class gailan {
+public class GaiLan {
     //预约挂号
     public static By yuyueguahao= By.xpath("//*[@id=\"cashMain\"]/div[1]/div[1]/div[1]/div/div[2]/div");
     //待收款

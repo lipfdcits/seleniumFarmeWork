@@ -2,7 +2,7 @@ package page.shouyinqu;
 
 import org.openqa.selenium.By;
 
-public class guahao {
+public class GuaHao {
     //选择科室
     public static By xuanzekeshi= By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[2]/div[1]/div/input");
     //内科

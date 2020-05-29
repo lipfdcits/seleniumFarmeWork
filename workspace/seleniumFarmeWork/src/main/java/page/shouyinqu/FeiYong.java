@@ -2,12 +2,12 @@ package page.shouyinqu;
 
 import org.openqa.selenium.By;
 
-public class feiyong {
+public class FeiYong {
 
     //日结
     public static By rijie= By.xpath("//*[@id=\"tab-rijie\"]");
     //统计
-    public static By tongji= By.xpath("//*[@id=\"tab-feiyong\"]");
+    public static By tongji= By.xpath("//*[@id=\"tab-FeiYong\"]");
     //新增
     public static By xinzeng= By.xpath("//*[@id=\"pane-rijie\"]/div[1]/button[1]");
     //查询
@@ -35,7 +35,7 @@ public class feiyong {
     //知道了
     public static By zhidao= By.xpath("//*[@id=\"settleDay\"]/div[1]/div/div[3]/span/button");
     //订单号
-    public static By dingdanhao= By.xpath("//*[@id=\"pane-feiyong\"]/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[2]/div");
+    public static By dingdanhao= By.xpath("//*[@id=\"pane-FeiYong\"]/div[1]/div[2]/div[3]/table/tbody/tr[1]/td[2]/div");
     //X号
     public static By X= By.xpath("//*[@id=\"orderInfo\"]/div[1]/div/div[1]/button");
 }

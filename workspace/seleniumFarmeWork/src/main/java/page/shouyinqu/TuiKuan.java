@@ -2,7 +2,7 @@ package page.shouyinqu;
 
 import org.openqa.selenium.By;
 
-public class tuikuan {
+public class TuiKuan {
     //退款
     public static By tuikuanTital=By.xpath("//*[@id=\"refundList\"]/div[1]/div/div[1]");
     //订单号
