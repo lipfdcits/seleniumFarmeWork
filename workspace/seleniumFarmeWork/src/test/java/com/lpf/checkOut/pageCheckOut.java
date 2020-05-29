@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import page.chuangkouqu.*;
 import page.firstPage;
-import page.kucunguanli.ShouYeGaiLan;
+import page.kucunguanli.*;
 import page.selectHospital;
 import page.shouyinqu.*;
 import page.yishengqu.*;
@@ -123,7 +123,26 @@ public class pageCheckOut {
         }else {
             System.err.println();
         }
+        //点击商品入库
+        PageCheckOutUtil.checkout("商品入库",firstPage.shangpinruku, ShangPinRuKu.shangpinruku,"商品入库");
+        //点击商品出库
+        PageCheckOutUtil.checkout("商品出库",firstPage.shangpinchuku, ShangPinChuKu.shangpinchuku,"商品出库");
+        //库存查询
+        PageCheckOutUtil.checkout("库存查询",firstPage.kucunchaxun, KuCunChaXun.shangpinkucun,"商品库存");
+        //库存盘点
+        PageCheckOutUtil.checkout("库存盘点",firstPage.kucunpandian, KuCunPanDian.pandiandanbianhao,"盘点单编号");
+        //商品预警
+        PageCheckOutUtil.checkout("商品预警",firstPage.shangpinyujing,ShangPinYuJing.youxiaoqiyujing,"有效期预警");
+        //商品报损
+        PageCheckOutUtil.checkout("商品报损",firstPage.shangpinbaosun,ShangPinBaoSun.shangpinbaosun,"商品报损");
+        //商品调价
+        PageCheckOutUtil.checkout("商品调价",firstPage.shangpintiaojia,ShangPinTiaoJia.shangpintiaojia,"商品调价");
+        //调价统计
+        PageCheckOutUtil.checkout("进销存统计",firstPage.jinxiaocuntongji,JinXiaoCun.tiaojiatongji,"调价统计");
+
     }
+
+
 
 
 }

@@ -48,7 +48,7 @@ public class firstPage {
         //商品入库
         public static By shangpinruku= By.xpath("//*[@id=\"app\"]/div/div[2]/div[1]/div[1]/div[1]/div/ul/div[4]/li/ul/div[2]/a/li");
         //商品出库
-        public static By shanpinchuku= By.xpath("//*[@id=\"app\"]/div/div[2]/div[1]/div[1]/div[1]/div/ul/div[4]/li/ul/div[3]/a/li");
+        public static By shangpinchuku= By.xpath("//*[@id=\"app\"]/div/div[2]/div[1]/div[1]/div[1]/div/ul/div[4]/li/ul/div[3]/a/li");
         //库存查询
         public static By kucunchaxun= By.xpath("//*[@id=\"app\"]/div/div[2]/div[1]/div[1]/div[1]/div/ul/div[4]/li/ul/div[4]/a/li");
         //库存盘点
