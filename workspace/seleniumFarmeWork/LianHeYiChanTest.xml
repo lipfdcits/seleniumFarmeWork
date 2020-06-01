@@ -3,8 +3,8 @@
 <suite name="Default Suite">
   <test name="seleniumFarmeWork">
     <classes>
-      <class name="com.lpf.checkOut.pageCheckOut">
-      </class> <!-- com.lpf.actionTest -->
+      <class name="com.lpf.checkOut.pageCheckOut"/>
+      <class name="com.lpf.checkOut.secondPageCheckOut"/>
     </classes>
   </test> <!-- seleniumFarmeWork -->
 </suite> <!-- Default Suite -->
