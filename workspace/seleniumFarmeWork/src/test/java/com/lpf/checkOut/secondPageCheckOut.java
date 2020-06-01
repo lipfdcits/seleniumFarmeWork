@@ -12,6 +12,7 @@ import page.selectHospital;
 import page.shouyinqu.*;
 import page.yishengqu.DianZiBingLi;
 import page.yishengqu.JinRiJiuZhen;
+import page.yishengqu.XunZhengYixue;
 
 
 import java.awt.*;
@@ -19,7 +20,7 @@ import java.awt.event.KeyEvent;
 import java.lang.reflect.Method;
 
 public class secondPageCheckOut {
-    WebDriver driver;
+    
     //登录
     @BeforeTest
     public void loginPage() throws InterruptedException {
@@ -210,6 +211,11 @@ public class secondPageCheckOut {
     public void jinrijiuzhen() throws InterruptedException {
         //点击快速就诊
         PageCheckOutUtil.checkout("快速就诊", JinRiJiuZhen.kuaisujiuzhen, DianZiBingLi.jibenxinxi,"基本信息");
+    }
+    @Test
+    public void xunzhengyixue() throws InterruptedException {
+        //点击诊疗指南
+        PageCheckOutUtil.checkout("诊疗指南", XunZhengYixue.zhenliaozhinan,XunZhengYixue.fuke,"妇科");
     }
 
 }
