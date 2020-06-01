@@ -2,7 +2,7 @@ package page.yishengqu;
 
 import org.openqa.selenium.By;
 
-public class zhenjichufang {
+public class ZhenJiChuFang {
     //新增处方
     public static By xinzengchufang= By.xpath("//*[@id=\"cardPrescription\"]/div[1]/div[2]");
     //组号

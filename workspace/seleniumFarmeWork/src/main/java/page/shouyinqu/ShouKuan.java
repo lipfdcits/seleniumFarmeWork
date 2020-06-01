@@ -6,11 +6,25 @@ public class ShouKuan {
     //收款
     public static By shoukuan=By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[1]");
     //收款按钮
-    public static By shoukuanButton= By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[13]/div/div");
+    public static By shoukuanButton= By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[14]/div/div");
+        //确认收款
+        public static By querenshoukuan=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[1]/span");
+        //收款-确认
+        public static By queren=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[3]/span/button[1]");
+        //收款-取消
+        public static By quxiao=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[3]/span/button[2]");
+        //支付成功
+        public static By zhifuchenggong=By.xpath("//*[@id=\"moneySuccess\"]/div[1]/div/div[1]/span");
+        //关闭
+        public static By guanbi=By.xpath("//*[@id=\"moneySuccess\"]/div[1]/div/div[3]/span/button");
     //查询
     public static By chaxun= By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[2]/button");
     //订单号
-    public static By dingdanhao= By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[1]/div");
+    public static By dingdanhao= By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[2]/div/span");
+        //单价
+        public static By danjia=By.xpath("//*[@id=\"receiptInfo\"]/div[1]/div/div[2]/div[1]/div/div[2]/table/thead/tr/th[3]/div");
+        //订单详情-取消
+        public static By dingdanquxiao=By.xpath("//*[@id=\"receiptInfo\"]/div[1]/div/div[2]/div[2]/div/button");
     //日期-开始日期
     public static By kaishiriqi= By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[2]/div[1]/input[1]");
     //日期-结束日期

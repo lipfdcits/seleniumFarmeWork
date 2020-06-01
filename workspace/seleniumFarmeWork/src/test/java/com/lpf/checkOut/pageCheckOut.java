@@ -26,11 +26,6 @@ public class pageCheckOut {
     @BeforeTest
     public void loginPage() throws InterruptedException {
         login.loginAction("chrome","https://testsaas.qingxiaoguo.com","15110403429","123456");
-
-//        String text = elementFind.findElement(selectHospital.chuangjianzhensuo).getText();
-//        Assert.assertEquals(text,"创建诊所");
-//        //选择医院页面跳转至首页页面
-//        PageCheckOutUtil.checkout("首页",selectHospital.zhensuo1,firstPage.shouyinqu,"收银区");
         Action.click(selectHospital.zhensuo1);
     }
     //关闭浏览器
@@ -41,8 +36,16 @@ public class pageCheckOut {
     //收银区页面跳转校验
     @Test
     public void ShouYinQuCheckOut() throws InterruptedException {
-        //点击概览,查看并校验页面跳转
-        PageCheckOutUtil.checkout("概览",firstPage.gailan, GaiLan.yuyueguahao,"预约挂号");
+        //点击医生区,查看下拉框是否展开
+        boolean panduan=elementFind.findElement(firstPage.gailan).isDisplayed();
+        if(panduan) {
+            //点击概览,查看并校验页面跳转
+            PageCheckOutUtil.checkout("概览",firstPage.gailan, GaiLan.yuyueguahao,"预约挂号");
+        }else{
+            Action.click(firstPage.shouyinqu);
+            //点击概览,查看并校验页面跳转
+            PageCheckOutUtil.checkout("概览",firstPage.gailan, GaiLan.yuyueguahao,"预约挂号");
+        }
         //点击挂号,查看并校验页面跳转
         PageCheckOutUtil.checkout("挂号",firstPage.guahao, GuaHao.chakanyishengpaiban,"查看医生排班>");
         //点击收款,查看并校验页面跳转
@@ -60,14 +63,14 @@ public class pageCheckOut {
         boolean panduan=elementFind.findElement(firstPage.jinrijiuzhen).isDisplayed();
         if(panduan) {
             //点击今日就诊,查看并校验页面跳转
-            PageCheckOutUtil.checkout("今日就诊",firstPage.jinrijiuzhen, jinrijiuzhen.kuaisujiuzhen,"快速就诊");
+            PageCheckOutUtil.checkout("今日就诊",firstPage.jinrijiuzhen, JinRiJiuZhen.kuaisujiuzhen,"快速就诊");
         }else{
             Action.click(firstPage.yishengqu);
             //点击今日就诊,查看并校验页面跳转
-            PageCheckOutUtil.checkout("今日就诊",firstPage.jinrijiuzhen, jinrijiuzhen.kuaisujiuzhen,"快速就诊");
+            PageCheckOutUtil.checkout("今日就诊",firstPage.jinrijiuzhen, JinRiJiuZhen.kuaisujiuzhen,"快速就诊");
         }
         //点击快速就诊,查看并校验页面跳转
-        PageCheckOutUtil.checkout("快速就诊",jinrijiuzhen.kuaisujiuzhen, KuaiSuJiuZhen.wanchengjiuzhen,"完成就诊");
+        PageCheckOutUtil.checkout("快速就诊", JinRiJiuZhen.kuaisujiuzhen, KuaiSuJiuZhen.wanchengjiuzhen,"完成就诊");
         //点击电子病历,查看并校验页面跳转
         PageCheckOutUtil.checkout("电子病历",KuaiSuJiuZhen.dianzibingli, DianZiBingLi.jibenxinxi,"基本信息");
         //点击徇证医学,查看并校验页面跳转

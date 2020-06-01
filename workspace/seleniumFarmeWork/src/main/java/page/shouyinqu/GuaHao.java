@@ -13,6 +13,12 @@ public class GuaHao {
     public static By houzhiyuan= By.xpath("/html/body/div[4]/div[1]/div[1]/ul/li[6]");
     //查看医生排班
     public static By chakanyishengpaiban= By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[2]/div[3]");
+        //医生排班
+        public static By yishengpaiban=By.xpath("//*[@id=\"doctorsScheduling\"]/div[1]/div/div[1]/span");
+        //确定
+        public static By queding=By.xpath("//*[@id=\"doctorsScheduling\"]/div[1]/div/div[3]/span/button[1]");
+        //取消
+        public static By quxiao=By.xpath("//*[@id=\"doctorsScheduling\"]/div[1]/div/div[3]/span/button[2]");
     //姓名
     public static By name= By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[2]/form/div[1]/div/div/div/div[1]/input");
     //性别

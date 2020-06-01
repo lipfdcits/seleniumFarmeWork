@@ -2,7 +2,7 @@ package page.yishengqu;
 
 import org.openqa.selenium.By;
 
-public class jinrijiuzhen {
+public class JinRiJiuZhen {
     //候诊中
     public static By houzhenzhong= By.xpath("//*[@id=\"tab-waiting\"]");
     //治疗中

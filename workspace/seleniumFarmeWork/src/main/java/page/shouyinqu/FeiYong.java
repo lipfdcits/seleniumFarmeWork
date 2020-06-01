@@ -10,6 +10,12 @@ public class FeiYong {
     public static By tongji= By.xpath("//*[@id=\"tab-FeiYong\"]");
     //新增
     public static By xinzeng= By.xpath("//*[@id=\"pane-rijie\"]/div[1]/button[1]");
+        //新增日结
+        public static By xinzengrijie=By.xpath("//*[@id=\"settleDay\"]/div[1]/div/div[1]/span");
+        //新增日结-取消
+        public static By quxiao=By.xpath("//*[@id=\"settleDay\"]/div[1]/div/div[3]/span/div/button[2]");
+        //新增日结-提交
+        public static By tijiao=By.xpath("//*[@id=\"settleDay\"]/div[1]/div/div[3]/span/div/button[1]");
     //查询
     public static By chaxun= By.xpath("//*[@id=\"pane-rijie\"]/div[1]/button[2]");
     //查询条件

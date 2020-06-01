@@ -9,6 +9,12 @@ public class TuiKuan {
     public static By dingdanhao= By.xpath("//*[@id=\"refundList\"]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[1]/div");
     //退款操作
     public static By tuikuanButton= By.xpath("//*[@id=\"refundList\"]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[12]/div/div");
+        //确认退款
+        public static By querentuikuan=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[1]/span");
+        //确认退款-确定
+        public static By queren=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[3]/span/button[1]");
+        //确认退款-取消
+        public static By quxiao=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[3]/span/button[2]");
     //日期-开始日期
     public static By kaishiriqi= By.xpath("//*[@id=\"refundList\"]/div[1]/div/div[2]/div[1]/input[1]");
     //日期-结束日期

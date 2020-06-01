@@ -2,7 +2,7 @@ package page.yishengqu;
 
 import org.openqa.selenium.By;
 
-public class zhongyaochufang {
+public class ZhongYaoChuFang {
     //饮片
     public static By yinpian= By.xpath("//*[@id=\"cardPrescription\"]/div[4]/div[1]/div[2]/div/label[1]/span");
     //颗粒
