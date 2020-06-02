@@ -18,3 +18,39 @@
 这是warn
 [ERROR] 2020-05-28 14:19:21,224 method:com.lpf.driver.LoggerControler.err(LoggerControler.java:46)
 这是err
+[INFO ] 2020-06-02 17:12:08,855 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+ShouYinQuCheckOut Start
+[INFO ] 2020-06-02 17:12:14,387 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+ShouYinQuCheckOut Success
+[INFO ] 2020-06-02 17:12:18,068 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = ShouYinQuCheckOut
+[INFO ] 2020-06-02 17:16:11,310 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+ShouYinQuCheckOut Start
+[INFO ] 2020-06-02 17:16:21,572 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [ShouYinQuCheckOut] on class [com.lpf.checkOut.pageCheckOut] Retry 1 times
+[INFO ] 2020-06-02 17:16:21,572 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+ShouYinQuCheckOut Skipped
+[INFO ] 2020-06-02 17:16:21,572 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+ShouYinQuCheckOut Start
+[INFO ] 2020-06-02 17:16:31,826 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [ShouYinQuCheckOut] on class [com.lpf.checkOut.pageCheckOut] Retry 2 times
+[INFO ] 2020-06-02 17:16:31,827 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+ShouYinQuCheckOut Skipped
+[INFO ] 2020-06-02 17:16:31,827 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+ShouYinQuCheckOut Start
+[INFO ] 2020-06-02 17:16:42,543 method:com.lpf.driver.testng.TestResultListener.onTestFailure(TestResultListener.java:27)
+ShouYinQuCheckOut Failure
+[INFO ] 2020-06-02 17:16:46,208 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = ShouYinQuCheckOut
+[INFO ] 2020-06-02 17:16:46,208 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = ShouYinQuCheckOut
+[INFO ] 2020-06-02 17:16:46,208 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:78)
+failedTest = ShouYinQuCheckOut
+[INFO ] 2020-06-02 17:16:46,208 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:101)
+Remove repeat Fail Test: ShouYinQuCheckOut
+[INFO ] 2020-06-02 17:17:42,635 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+ShouYinQuCheckOut Start
+[INFO ] 2020-06-02 17:17:48,727 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+ShouYinQuCheckOut Success
+[INFO ] 2020-06-02 17:17:52,411 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = ShouYinQuCheckOut

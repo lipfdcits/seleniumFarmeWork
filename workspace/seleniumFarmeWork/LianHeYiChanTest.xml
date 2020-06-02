@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Default Suite">
+  <listeners>
+    <listener class-name="com.lpf.driver.testng.RetryListener"/>
+    <listener class-name="com.lpf.driver.testng.TestResultListener"/>
+  </listeners>
   <test name="seleniumFarmeWork">
     <classes>
-      <class name="com.lpf.checkOut.pageCheckOut"/>
-      <class name="com.lpf.checkOut.secondPageCheckOut"/>
+      <class name="com.lpf.checkOut.pageCheckOut">
+        <methods>
+          <include name="ShouYinQuCheckOut"/>
+        </methods>
+      </class>
     </classes>
   </test> <!-- seleniumFarmeWork -->
 </suite> <!-- Default Suite -->
