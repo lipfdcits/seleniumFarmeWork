@@ -7,10 +7,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import page.chuangkouqu.*;
 import page.firstPage;
 import page.selectHospital;
 import page.shouyinqu.*;
 import page.yishengqu.DianZiBingLi;
+import page.yishengqu.JianKangDangAn;
 import page.yishengqu.JinRiJiuZhen;
 import page.yishengqu.XunZhengYixue;
 
@@ -58,7 +60,7 @@ public class secondPageCheckOut {
                 SwitchUtil.clickElement(firstPage.yishengqu,firstPage.xunzhengyixue);
                 break;
             case "jiankangdangan":
-                SwitchUtil.clickElement(firstPage.yishengqu,firstPage.jinrijiuzhen);
+                SwitchUtil.clickElement(firstPage.yishengqu,firstPage.jiankangdangan);
                 break;
             case "dingdan":
                 SwitchUtil.clickElement(firstPage.chuangkouqu,firstPage.dingdan);
@@ -213,9 +215,45 @@ public class secondPageCheckOut {
         PageCheckOutUtil.checkout("快速就诊", JinRiJiuZhen.kuaisujiuzhen, DianZiBingLi.jibenxinxi,"基本信息");
     }
     @Test
-    public void xunzhengyixue() throws InterruptedException {
-        //点击诊疗指南
-        PageCheckOutUtil.checkout("诊疗指南", XunZhengYixue.zhenliaozhinan,XunZhengYixue.fuke,"妇科");
+    public void jiankangdangan() throws InterruptedException {
+        //点击第一个卡片
+        PageCheckOutUtil.checkout("卡片一", JianKangDangAn.kapian1,JianKangDangAn.jiuzhenjilu,"就诊记录");
     }
+    @Test
+    public void dingdan() throws InterruptedException {
+        //待发药
+        PageCheckOutUtil.checkout("待发药", DingDan.daifayao, FaYao.dingdanhao,"订单号");
+        Action.click(firstPage.dingdan);
+        //待执行
+        PageCheckOutUtil.checkout("待执行",DingDan.daizhixing, ZhenJi.zhenji,"针剂");
+        Action.click(firstPage.dingdan);
+        //待检查
+        PageCheckOutUtil.checkout("待检查",DingDan.daijiancha, JianCha.jiancha,"检查");
+        Action.click(firstPage.dingdan);
+        //待检验
+        PageCheckOutUtil.checkout("待检验",DingDan.daijianyan, JianYan.jianyan,"检验");
+        Action.click(firstPage.dingdan);
+        //待理疗
+        PageCheckOutUtil.checkout("待理疗",DingDan.daililiao,LiLiao.liliao,"理疗");
+        Action.click(firstPage.dingdan);
+        //收款
+        PageCheckOutUtil.checkout("收款",DingDan.shoukuan,DingDan.yingshoujine,"应收金额");
+        //确定
+        PageCheckOutUtil.checkout("支付确定",DingDan.queren,DingDan.weixinzhifu,"微信支付");
+        //微信支付
+        PageCheckOutUtil.checkout("微信支付",DingDan.weixinzhifu,DingDan.zhifuchenggong,"支付成功");
+        Action.click(DingDan.guanbi);
+        //一键收款
+        Action.click(DingDan.first);
+        Action.click(DingDan.second);
+        PageCheckOutUtil.checkout("一键收款",DingDan.yijianshoukuan,DingDan.yingshoujine_yijian,"应收金额");
+        //点击确定
+        PageCheckOutUtil.checkout("一键支付确定",DingDan.queren_yijian,DingDan.weixinzhifu_yijian,"微信支付");
+        //点击微信支付
+        PageCheckOutUtil.checkout("微信支付",DingDan.weixinzhifu_yijian,DingDan.zhifuchenggong_yijian,"支付成功");
+        //点击关闭
+        PageCheckOutUtil.checkout("关闭",DingDan.guanbi_yijian,DingDan.daishoukuan,"待收款");
+    }
+
 
 }
