@@ -1,5 +1,6 @@
 package com.lpf.checkOut;
 
+import com.holmos.webtest.struct.Page;
 import com.lpf.driver.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -68,7 +69,10 @@ public class secondPageCheckOut {
             case "lingshou":
                 SwitchUtil.clickElement(firstPage.chuangkouqu,firstPage.lingshou);
                 break;
-            case "fayao":
+            case "fayao1":
+                SwitchUtil.clickElement(firstPage.chuangkouqu,firstPage.fayao);
+                break;
+            case "fayao2":
                 SwitchUtil.clickElement(firstPage.chuangkouqu,firstPage.fayao);
                 break;
             case "zhenji":
@@ -254,6 +258,55 @@ public class secondPageCheckOut {
         //点击关闭
         PageCheckOutUtil.checkout("关闭",DingDan.guanbi_yijian,DingDan.daishoukuan,"待收款");
     }
-
+    @Test
+    public void lingshou() throws InterruptedException {
+        //点击商品
+        PageCheckOutUtil.checkout("商品",LingShou.shangpin,LingShou.shangpinmingcheng,"商品名称");
+        //添加商品后,点击收款
+        Action.click(LingShou.shangpinjiaru);
+        PageCheckOutUtil.checkout("收款", LingShou.shoukuan, LingShou.shoukuanmingxi,"收款明细");
+        //点击取消
+        PageCheckOutUtil.checkout("取消",LingShou.quxiao, LingShou.xinkaidingdan,"新开订单");
+        //添加商品后,点击清空
+        Action.click(LingShou.shangpinjiaru);
+        PageCheckOutUtil.checkout("清空",LingShou.qingkong, LingShou.zanwuneirong,"暂无内容");
+        //点击项目
+        PageCheckOutUtil.checkout("项目",LingShou.xiangmu, LingShou.chanpinmingcheng,"产品名称");
+        //点击挂单
+        PageCheckOutUtil.checkout("挂单",LingShou.guadan,LingShou.qingshuruxingming,"请输入姓名");
+        PageCheckOutUtil.checkout("挂单",LingShou.guadan,LingShou.qingshurushoujihao,"请输入手机号");
+    }
+    @Test
+    public void fayao1() throws InterruptedException {
+        //点击发药
+        PageCheckOutUtil.checkout("发药",FaYao.fayao_xiayao,FaYao.xuanzefafang,"选择发放");
+        //点击取消
+        PageCheckOutUtil.checkout("取消",FaYao.quxiao_quxiao,FaYao.yifafang_xiyao,"已发放");
+        //点击中药
+        PageCheckOutUtil.checkout("中药",FaYao.zhongyao,FaYao.fayao_zhongyao,"发药");
+        //点击发药
+        PageCheckOutUtil.checkout("发药",FaYao.fayao_zhongyao,FaYao.tiaopei,"调配：");
+        //点击取消
+        PageCheckOutUtil.checkout("取消",FaYao.quxiao_zhongyao,FaYao.yifafang_zhongyao,"已发放");
+        //点击提交
+        Action.click(FaYao.fayao_zhongyao);
+        PageCheckOutUtil.checkout("提交",FaYao.tijiao_zhongyao,FaYao.tijiaochenggong,"提交成功");
+    }
+//    @Test
+//    public void fayao2() throws InterruptedException {
+//        //点击已发放
+//        PageCheckOutUtil.checkout("已发放",FaYao.yifafang_xiyao,FaYao.yaodan_xiyao,"药单");
+//        //点击药单
+//        PageCheckOutUtil.checkout("药单",FaYao.yaodan_xiyao,FaYao.fafangyaopin,"发放药品");
+//        //点击关闭
+//        PageCheckOutUtil.checkout("关闭",FaYao.guanbi_xiyao,FaYao.yifafang_xiyao,"已发放");
+//        //点击中药,点击已发放
+//        Action.click(FaYao.zhongyao);
+//        Action.click(FaYao.yifafang_zhongyao);
+//        //点击药单
+//        PageCheckOutUtil.checkout("药单",FaYao.yaodan_zhongyao,FaYao.shenhe,"审核：");
+//        //点击关闭
+//        PageCheckOutUtil.checkout("关闭",FaYao.guanbi_zhongyao,FaYao.yifafang_zhongyao,"已发放");
+//    }
 
 }

@@ -440,3 +440,99 @@ PassedTests = dingdan
 PassedTests = gailan
 [INFO ] 2020-06-02 17:41:12,497 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
 PassedTests = jinrijiuzhen
+[INFO ] 2020-06-03 14:49:32,363 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao Start
+[INFO ] 2020-06-03 14:49:37,334 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [fayao] on class [com.lpf.checkOut.secondPageCheckOut] Retry 1 times
+[INFO ] 2020-06-03 14:49:37,334 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+fayao Skipped
+[INFO ] 2020-06-03 14:49:38,453 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao Start
+[INFO ] 2020-06-03 14:49:38,488 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [fayao] on class [com.lpf.checkOut.secondPageCheckOut] Retry 2 times
+[INFO ] 2020-06-03 14:49:38,488 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+fayao Skipped
+[INFO ] 2020-06-03 14:49:38,489 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao Start
+[INFO ] 2020-06-03 14:49:38,891 method:com.lpf.driver.testng.TestResultListener.onTestFailure(TestResultListener.java:27)
+fayao Failure
+[INFO ] 2020-06-03 14:49:38,897 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = fayao
+[INFO ] 2020-06-03 14:49:38,897 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = fayao
+[INFO ] 2020-06-03 14:49:38,898 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:78)
+failedTest = fayao
+[INFO ] 2020-06-03 14:49:38,898 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:101)
+Remove repeat Fail Test: fayao
+[INFO ] 2020-06-03 15:09:09,628 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao1 Start
+[INFO ] 2020-06-03 15:09:11,808 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+fayao1 Success
+[INFO ] 2020-06-03 15:09:12,888 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao2 Start
+[INFO ] 2020-06-03 15:09:15,106 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [fayao2] on class [com.lpf.checkOut.secondPageCheckOut] Retry 1 times
+[INFO ] 2020-06-03 15:09:15,106 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+fayao2 Skipped
+[INFO ] 2020-06-03 15:09:16,215 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao2 Start
+[INFO ] 2020-06-03 15:09:17,283 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [fayao2] on class [com.lpf.checkOut.secondPageCheckOut] Retry 2 times
+[INFO ] 2020-06-03 15:09:17,283 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+fayao2 Skipped
+[INFO ] 2020-06-03 15:09:17,284 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao2 Start
+[INFO ] 2020-06-03 15:09:18,691 method:com.lpf.driver.testng.TestResultListener.onTestFailure(TestResultListener.java:27)
+fayao2 Failure
+[INFO ] 2020-06-03 15:09:18,698 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = fayao1
+[INFO ] 2020-06-03 15:09:18,698 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = fayao2
+[INFO ] 2020-06-03 15:09:18,699 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = fayao2
+[INFO ] 2020-06-03 15:09:18,699 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:78)
+failedTest = fayao2
+[INFO ] 2020-06-03 15:09:18,699 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:101)
+Remove repeat Fail Test: fayao2
+[INFO ] 2020-06-03 15:10:09,055 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao1 Start
+[INFO ] 2020-06-03 15:10:12,265 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+fayao1 Success
+[INFO ] 2020-06-03 15:10:15,935 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = fayao1
+[INFO ] 2020-06-03 15:10:39,158 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao2 Start
+[INFO ] 2020-06-03 15:10:42,395 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+fayao2 Success
+[INFO ] 2020-06-03 15:10:46,052 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = fayao2
+[INFO ] 2020-06-03 15:11:50,113 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao1 Start
+[INFO ] 2020-06-03 15:11:53,321 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+fayao1 Success
+[INFO ] 2020-06-03 15:11:54,418 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao2 Start
+[INFO ] 2020-06-03 15:12:00,141 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [fayao2] on class [com.lpf.checkOut.secondPageCheckOut] Retry 1 times
+[INFO ] 2020-06-03 15:12:00,141 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+fayao2 Skipped
+[INFO ] 2020-06-03 15:12:01,244 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao2 Start
+[INFO ] 2020-06-03 15:12:02,315 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [fayao2] on class [com.lpf.checkOut.secondPageCheckOut] Retry 2 times
+[INFO ] 2020-06-03 15:12:02,316 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+fayao2 Skipped
+[INFO ] 2020-06-03 15:12:02,318 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+fayao2 Start
+[INFO ] 2020-06-03 15:12:03,728 method:com.lpf.driver.testng.TestResultListener.onTestFailure(TestResultListener.java:27)
+fayao2 Failure
+[INFO ] 2020-06-03 15:12:03,732 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = fayao1
+[INFO ] 2020-06-03 15:12:03,732 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = fayao2
+[INFO ] 2020-06-03 15:12:03,733 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = fayao2
+[INFO ] 2020-06-03 15:12:03,733 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:78)
+failedTest = fayao2
+[INFO ] 2020-06-03 15:12:03,733 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:101)
+Remove repeat Fail Test: fayao2
