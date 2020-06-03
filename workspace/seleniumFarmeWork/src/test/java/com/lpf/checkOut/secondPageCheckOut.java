@@ -186,7 +186,7 @@ public class secondPageCheckOut {
         //点击收款按钮
         PageCheckOutUtil.checkout("收款按钮",ShouKuan.shoukuanButton,ShouKuan.querenshoukuan,"确认收款");
         //点击确定
-        PageCheckOutUtil.checkout("支付成功",ShouKuan.queren, ShouKuan.zhifuchenggong,"支付成功");
+        PageCheckOutUtil.checkout("确定",ShouKuan.queren, ShouKuan.zhifuchenggong,"支付成功");
         //点击关闭
         PageCheckOutUtil.checkout("关闭",ShouKuan.guanbi,ShouKuan.shoukuan,"收款");
         //点击订单号

@@ -13,8 +13,8 @@ public class ShouKuan {
         public static By queren=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[3]/span/button[1]");
         //收款-取消
         public static By quxiao=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[3]/span/button[2]");
-        //支付成功
-        public static By zhifuchenggong=By.xpath("//*[@id=\"moneySuccess\"]/div[1]/div/div[1]/span");
+        //应收金额
+        public static By zhifuchenggong=By.xpath("//*[@id=\"moneySuccess\"]/div[1]/div/div[2]/div/p");
         //关闭
         public static By guanbi=By.xpath("//*[@id=\"moneySuccess\"]/div[1]/div/div[3]/span/button");
     //查询

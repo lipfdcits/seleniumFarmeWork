@@ -7,11 +7,12 @@
   </listeners>
   <test name="seleniumFarmeWork">
     <classes>
-      <class name="com.lpf.checkOut.pageCheckOut">
-        <methods>
-          <include name="ShouYinQuCheckOut"/>
-        </methods>
-      </class>
+      <!--<class name="com.lpf.checkOut.pageCheckOut"/>-->
+      <class name="com.lpf.checkOut.secondPageCheckOut"/>
+        <!--<methods>-->
+          <!--<include name="ShouYinQuCheckOut"/>-->
+        <!--</methods>-->
+
     </classes>
   </test> <!-- seleniumFarmeWork -->
 </suite> <!-- Default Suite -->

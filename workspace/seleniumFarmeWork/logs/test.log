@@ -54,3 +54,389 @@ ShouYinQuCheckOut Start
 ShouYinQuCheckOut Success
 [INFO ] 2020-06-02 17:17:52,411 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
 PassedTests = ShouYinQuCheckOut
+[INFO ] 2020-06-02 17:20:01,664 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+ShouYinQuCheckOut Start
+[INFO ] 2020-06-02 17:20:04,951 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+ShouYinQuCheckOut Success
+[INFO ] 2020-06-02 17:20:08,630 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = ShouYinQuCheckOut
+[INFO ] 2020-06-02 17:20:57,398 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+CaiWuGuanLiPageCheckOut Start
+[INFO ] 2020-06-02 17:21:00,678 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+CaiWuGuanLiPageCheckOut Success
+[INFO ] 2020-06-02 17:21:00,679 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+ChuFangGuanLiPageCheckOut Start
+[INFO ] 2020-06-02 17:21:02,040 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+ChuFangGuanLiPageCheckOut Success
+[INFO ] 2020-06-02 17:21:02,040 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+KuCunGuanLiPageCHeckOut Start
+[INFO ] 2020-06-02 17:21:09,824 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+KuCunGuanLiPageCHeckOut Success
+[INFO ] 2020-06-02 17:21:09,825 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+ShouYinQuCheckOut Start
+[INFO ] 2020-06-02 17:21:14,210 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+ShouYinQuCheckOut Success
+[INFO ] 2020-06-02 17:21:14,210 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+XiTongSheZhiPageCheckOut Start
+[INFO ] 2020-06-02 17:21:17,156 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+XiTongSheZhiPageCheckOut Success
+[INFO ] 2020-06-02 17:21:17,157 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+YiShengQuCheckOut Start
+[INFO ] 2020-06-02 17:21:28,213 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [YiShengQuCheckOut] on class [com.lpf.checkOut.pageCheckOut] Retry 1 times
+[INFO ] 2020-06-02 17:21:28,213 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+YiShengQuCheckOut Skipped
+[INFO ] 2020-06-02 17:21:28,214 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+YiShengQuCheckOut Start
+[INFO ] 2020-06-02 17:21:30,481 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+YiShengQuCheckOut Success
+[INFO ] 2020-06-02 17:21:30,482 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+YongHuYunYingPageCheckOut Start
+[INFO ] 2020-06-02 17:21:31,919 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+YongHuYunYingPageCheckOut Success
+[INFO ] 2020-06-02 17:21:31,920 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+chuangkouquPageCheckOut Start
+[INFO ] 2020-06-02 17:21:34,955 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+chuangkouquPageCheckOut Success
+[INFO ] 2020-06-02 17:21:38,645 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = ChuFangGuanLiPageCheckOut
+[INFO ] 2020-06-02 17:21:38,645 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = ShouYinQuCheckOut
+[INFO ] 2020-06-02 17:21:38,645 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = YiShengQuCheckOut
+[INFO ] 2020-06-02 17:21:38,645 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = CaiWuGuanLiPageCheckOut
+[INFO ] 2020-06-02 17:21:38,645 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = YongHuYunYingPageCheckOut
+[INFO ] 2020-06-02 17:21:38,645 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = KuCunGuanLiPageCHeckOut
+[INFO ] 2020-06-02 17:21:38,646 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = XiTongSheZhiPageCheckOut
+[INFO ] 2020-06-02 17:21:38,646 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = chuangkouquPageCheckOut
+[INFO ] 2020-06-02 17:21:38,646 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = YiShengQuCheckOut
+[INFO ] 2020-06-02 17:22:50,817 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+CaiWuGuanLiPageCheckOut Start
+[INFO ] 2020-06-02 17:22:57,396 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+CaiWuGuanLiPageCheckOut Success
+[INFO ] 2020-06-02 17:22:57,397 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+ChuFangGuanLiPageCheckOut Start
+[INFO ] 2020-06-02 17:23:00,769 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+ChuFangGuanLiPageCheckOut Success
+[INFO ] 2020-06-02 17:23:00,769 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+KuCunGuanLiPageCHeckOut Start
+[INFO ] 2020-06-02 17:23:14,840 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+KuCunGuanLiPageCHeckOut Success
+[INFO ] 2020-06-02 17:23:14,840 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+ShouYinQuCheckOut Start
+[INFO ] 2020-06-02 17:23:21,741 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+ShouYinQuCheckOut Success
+[INFO ] 2020-06-02 17:23:21,741 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+XiTongSheZhiPageCheckOut Start
+[INFO ] 2020-06-02 17:23:28,352 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+XiTongSheZhiPageCheckOut Success
+[INFO ] 2020-06-02 17:23:28,352 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+YiShengQuCheckOut Start
+[INFO ] 2020-06-02 17:23:34,959 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+YiShengQuCheckOut Success
+[INFO ] 2020-06-02 17:23:34,959 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+YongHuYunYingPageCheckOut Start
+[INFO ] 2020-06-02 17:23:40,965 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+YongHuYunYingPageCheckOut Success
+[INFO ] 2020-06-02 17:23:40,965 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+chuangkouquPageCheckOut Start
+[INFO ] 2020-06-02 17:23:50,307 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+chuangkouquPageCheckOut Success
+[INFO ] 2020-06-02 17:23:54,014 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = chuangkouquPageCheckOut
+[INFO ] 2020-06-02 17:23:54,014 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = KuCunGuanLiPageCHeckOut
+[INFO ] 2020-06-02 17:23:54,014 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = CaiWuGuanLiPageCheckOut
+[INFO ] 2020-06-02 17:23:54,014 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = YongHuYunYingPageCheckOut
+[INFO ] 2020-06-02 17:23:54,014 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = ChuFangGuanLiPageCheckOut
+[INFO ] 2020-06-02 17:23:54,015 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = XiTongSheZhiPageCheckOut
+[INFO ] 2020-06-02 17:23:54,015 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = ShouYinQuCheckOut
+[INFO ] 2020-06-02 17:23:54,015 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = YiShengQuCheckOut
+[INFO ] 2020-06-02 17:25:47,199 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+CaiWuGuanLiPageCheckOut Start
+[INFO ] 2020-06-02 17:25:53,795 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+CaiWuGuanLiPageCheckOut Success
+[INFO ] 2020-06-02 17:25:53,795 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+ChuFangGuanLiPageCheckOut Start
+[INFO ] 2020-06-02 17:25:57,120 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+ChuFangGuanLiPageCheckOut Success
+[INFO ] 2020-06-02 17:25:57,120 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+KuCunGuanLiPageCHeckOut Start
+[INFO ] 2020-06-02 17:26:11,022 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+KuCunGuanLiPageCHeckOut Success
+[INFO ] 2020-06-02 17:26:11,022 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+ShouYinQuCheckOut Start
+[INFO ] 2020-06-02 17:26:18,253 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+ShouYinQuCheckOut Success
+[INFO ] 2020-06-02 17:26:18,253 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+XiTongSheZhiPageCheckOut Start
+[INFO ] 2020-06-02 17:26:24,851 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+XiTongSheZhiPageCheckOut Success
+[INFO ] 2020-06-02 17:26:24,852 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+YiShengQuCheckOut Start
+[INFO ] 2020-06-02 17:26:31,436 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+YiShengQuCheckOut Success
+[INFO ] 2020-06-02 17:26:31,436 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+YongHuYunYingPageCheckOut Start
+[INFO ] 2020-06-02 17:26:34,953 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+YongHuYunYingPageCheckOut Success
+[INFO ] 2020-06-02 17:26:34,953 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+chuangkouquPageCheckOut Start
+[INFO ] 2020-06-02 17:26:43,820 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+chuangkouquPageCheckOut Success
+[INFO ] 2020-06-02 17:26:44,943 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+dingdan Start
+[INFO ] 2020-06-02 17:27:06,940 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+dingdan Success
+[INFO ] 2020-06-02 17:27:08,069 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+feiyong Start
+[INFO ] 2020-06-02 17:27:11,382 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+feiyong Success
+[INFO ] 2020-06-02 17:27:12,530 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+gailan Start
+[INFO ] 2020-06-02 17:27:23,984 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+gailan Success
+[INFO ] 2020-06-02 17:27:25,115 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+guahao Start
+[INFO ] 2020-06-02 17:27:27,324 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+guahao Success
+[INFO ] 2020-06-02 17:27:28,460 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+jiankangdangan Start
+[INFO ] 2020-06-02 17:27:29,559 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+jiankangdangan Success
+[INFO ] 2020-06-02 17:27:30,685 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+jinrijiuzhen Start
+[INFO ] 2020-06-02 17:27:31,796 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+jinrijiuzhen Success
+[INFO ] 2020-06-02 17:27:32,979 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+shoukuan Start
+[INFO ] 2020-06-02 17:27:44,323 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [shoukuan] on class [com.lpf.checkOut.secondPageCheckOut] Retry 1 times
+[INFO ] 2020-06-02 17:27:44,324 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+shoukuan Skipped
+[INFO ] 2020-06-02 17:27:45,439 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+shoukuan Start
+[INFO ] 2020-06-02 17:27:56,765 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [shoukuan] on class [com.lpf.checkOut.secondPageCheckOut] Retry 2 times
+[INFO ] 2020-06-02 17:27:56,765 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+shoukuan Skipped
+[INFO ] 2020-06-02 17:27:57,872 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+shoukuan Start
+[INFO ] 2020-06-02 17:28:09,555 method:com.lpf.driver.testng.TestResultListener.onTestFailure(TestResultListener.java:27)
+shoukuan Failure
+[INFO ] 2020-06-02 17:28:10,703 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+tuikuan Start
+[INFO ] 2020-06-02 17:28:12,913 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+tuikuan Success
+[INFO ] 2020-06-02 17:28:19,659 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = YongHuYunYingPageCheckOut
+[INFO ] 2020-06-02 17:28:19,659 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = tuikuan
+[INFO ] 2020-06-02 17:28:19,659 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = KuCunGuanLiPageCHeckOut
+[INFO ] 2020-06-02 17:28:19,659 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = gailan
+[INFO ] 2020-06-02 17:28:19,659 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = CaiWuGuanLiPageCheckOut
+[INFO ] 2020-06-02 17:28:19,659 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = ChuFangGuanLiPageCheckOut
+[INFO ] 2020-06-02 17:28:19,659 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = YiShengQuCheckOut
+[INFO ] 2020-06-02 17:28:19,659 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = guahao
+[INFO ] 2020-06-02 17:28:19,660 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = XiTongSheZhiPageCheckOut
+[INFO ] 2020-06-02 17:28:19,660 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = jinrijiuzhen
+[INFO ] 2020-06-02 17:28:19,660 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = ShouYinQuCheckOut
+[INFO ] 2020-06-02 17:28:19,660 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = jiankangdangan
+[INFO ] 2020-06-02 17:28:19,660 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = chuangkouquPageCheckOut
+[INFO ] 2020-06-02 17:28:19,660 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = dingdan
+[INFO ] 2020-06-02 17:28:19,660 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = feiyong
+[INFO ] 2020-06-02 17:28:19,660 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = shoukuan
+[INFO ] 2020-06-02 17:28:19,660 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = shoukuan
+[INFO ] 2020-06-02 17:28:19,660 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:78)
+failedTest = shoukuan
+[INFO ] 2020-06-02 17:28:19,660 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:101)
+Remove repeat Fail Test: shoukuan
+[INFO ] 2020-06-02 17:35:43,840 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+dingdan Start
+[INFO ] 2020-06-02 17:36:04,693 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [dingdan] on class [com.lpf.checkOut.secondPageCheckOut] Retry 1 times
+[INFO ] 2020-06-02 17:36:04,694 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+dingdan Skipped
+[INFO ] 2020-06-02 17:36:05,818 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+dingdan Start
+[INFO ] 2020-06-02 17:36:06,904 method:com.lpf.driver.testng.TestngRetry.retry(TestngRetry.java:32)
+Retry for [dingdan] on class [com.lpf.checkOut.secondPageCheckOut] Retry 2 times
+[INFO ] 2020-06-02 17:36:06,904 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+dingdan Skipped
+[INFO ] 2020-06-02 17:36:06,905 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+dingdan Start
+[INFO ] 2020-06-02 17:36:08,318 method:com.lpf.driver.testng.TestResultListener.onTestFailure(TestResultListener.java:27)
+dingdan Failure
+[INFO ] 2020-06-02 17:36:08,324 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+feiyong Start
+[INFO ] 2020-06-02 17:36:08,325 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+feiyong Skipped
+[INFO ] 2020-06-02 17:36:08,326 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+gailan Start
+[INFO ] 2020-06-02 17:36:08,327 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+gailan Skipped
+[INFO ] 2020-06-02 17:36:08,328 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+guahao Start
+[INFO ] 2020-06-02 17:36:08,328 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+guahao Skipped
+[INFO ] 2020-06-02 17:36:08,329 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+jiankangdangan Start
+[INFO ] 2020-06-02 17:36:08,330 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+jiankangdangan Skipped
+[INFO ] 2020-06-02 17:36:08,332 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+jinrijiuzhen Start
+[INFO ] 2020-06-02 17:36:08,333 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+jinrijiuzhen Skipped
+[INFO ] 2020-06-02 17:36:08,334 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+shoukuan Start
+[INFO ] 2020-06-02 17:36:08,334 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+shoukuan Skipped
+[INFO ] 2020-06-02 17:36:08,336 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+tuikuan Start
+[INFO ] 2020-06-02 17:36:08,336 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+tuikuan Skipped
+[INFO ] 2020-06-02 17:36:08,338 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = dingdan
+[INFO ] 2020-06-02 17:36:08,338 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = feiyong
+[INFO ] 2020-06-02 17:36:08,338 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = guahao
+[INFO ] 2020-06-02 17:36:08,339 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = tuikuan
+[INFO ] 2020-06-02 17:36:08,339 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = jinrijiuzhen
+[INFO ] 2020-06-02 17:36:08,339 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = dingdan
+[INFO ] 2020-06-02 17:36:08,339 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = gailan
+[INFO ] 2020-06-02 17:36:08,339 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = jiankangdangan
+[INFO ] 2020-06-02 17:36:08,339 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = shoukuan
+[INFO ] 2020-06-02 17:36:08,339 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:78)
+failedTest = dingdan
+[INFO ] 2020-06-02 17:36:08,339 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:101)
+Remove repeat Fail Test: dingdan
+[INFO ] 2020-06-02 17:37:25,741 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+dingdan Start
+[INFO ] 2020-06-02 17:37:25,743 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+dingdan Skipped
+[INFO ] 2020-06-02 17:37:25,743 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+feiyong Start
+[INFO ] 2020-06-02 17:37:25,744 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+feiyong Skipped
+[INFO ] 2020-06-02 17:37:25,744 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+gailan Start
+[INFO ] 2020-06-02 17:37:25,744 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+gailan Skipped
+[INFO ] 2020-06-02 17:37:25,744 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+guahao Start
+[INFO ] 2020-06-02 17:37:25,745 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+guahao Skipped
+[INFO ] 2020-06-02 17:37:25,745 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+jiankangdangan Start
+[INFO ] 2020-06-02 17:37:25,745 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+jiankangdangan Skipped
+[INFO ] 2020-06-02 17:37:25,746 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+jinrijiuzhen Start
+[INFO ] 2020-06-02 17:37:25,746 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+jinrijiuzhen Skipped
+[INFO ] 2020-06-02 17:37:25,748 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+shoukuan Start
+[INFO ] 2020-06-02 17:37:25,748 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+shoukuan Skipped
+[INFO ] 2020-06-02 17:37:25,748 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+tuikuan Start
+[INFO ] 2020-06-02 17:37:25,749 method:com.lpf.driver.testng.TestResultListener.onTestSkipped(TestResultListener.java:33)
+tuikuan Skipped
+[INFO ] 2020-06-02 17:37:25,751 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = jiankangdangan
+[INFO ] 2020-06-02 17:37:25,751 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = guahao
+[INFO ] 2020-06-02 17:37:25,751 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = shoukuan
+[INFO ] 2020-06-02 17:37:25,751 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = feiyong
+[INFO ] 2020-06-02 17:37:25,751 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = jinrijiuzhen
+[INFO ] 2020-06-02 17:37:25,751 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = dingdan
+[INFO ] 2020-06-02 17:37:25,751 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = gailan
+[INFO ] 2020-06-02 17:37:25,752 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:64)
+skipTest = tuikuan
+[INFO ] 2020-06-02 17:40:09,368 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+dingdan Start
+[INFO ] 2020-06-02 17:40:31,116 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+dingdan Success
+[INFO ] 2020-06-02 17:40:32,247 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+feiyong Start
+[INFO ] 2020-06-02 17:40:35,564 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+feiyong Success
+[INFO ] 2020-06-02 17:40:36,674 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+gailan Start
+[INFO ] 2020-06-02 17:40:47,519 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+gailan Success
+[INFO ] 2020-06-02 17:40:48,620 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+guahao Start
+[INFO ] 2020-06-02 17:40:50,814 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+guahao Success
+[INFO ] 2020-06-02 17:40:52,995 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+jiankangdangan Start
+[INFO ] 2020-06-02 17:40:54,078 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+jiankangdangan Success
+[INFO ] 2020-06-02 17:40:55,171 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+jinrijiuzhen Start
+[INFO ] 2020-06-02 17:40:56,267 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+jinrijiuzhen Success
+[INFO ] 2020-06-02 17:40:57,415 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+shoukuan Start
+[INFO ] 2020-06-02 17:41:05,514 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+shoukuan Success
+[INFO ] 2020-06-02 17:41:06,630 method:com.lpf.driver.testng.TestResultListener.onTestStart(TestResultListener.java:45)
+tuikuan Start
+[INFO ] 2020-06-02 17:41:08,814 method:com.lpf.driver.testng.TestResultListener.onTestSuccess(TestResultListener.java:39)
+tuikuan Success
+[INFO ] 2020-06-02 17:41:12,496 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = jiankangdangan
+[INFO ] 2020-06-02 17:41:12,496 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = shoukuan
+[INFO ] 2020-06-02 17:41:12,496 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = tuikuan
+[INFO ] 2020-06-02 17:41:12,496 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = guahao
+[INFO ] 2020-06-02 17:41:12,496 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = feiyong
+[INFO ] 2020-06-02 17:41:12,496 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = dingdan
+[INFO ] 2020-06-02 17:41:12,497 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = gailan
+[INFO ] 2020-06-02 17:41:12,497 method:com.lpf.driver.testng.TestResultListener.onFinish(TestResultListener.java:57)
+PassedTests = jinrijiuzhen
