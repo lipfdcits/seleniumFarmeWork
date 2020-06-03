@@ -9,10 +9,10 @@
     <classes>
       <!--<class name="com.lpf.checkOut.pageCheckOut"/>-->
       <class name="com.lpf.checkOut.secondPageCheckOut">
-        <methods>
-            <include name="fayao1"/>
-            <include name="fayao2"/>
-        </methods>
+        <!--<methods>-->
+            <!--<include name="fayao1"/>-->
+            <!--<include name="fayao2"/>-->
+        <!--</methods>-->
       </class>
     </classes>
   </test> <!-- seleniumFarmeWork -->
