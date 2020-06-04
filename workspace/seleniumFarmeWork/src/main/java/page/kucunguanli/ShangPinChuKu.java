@@ -21,5 +21,4 @@ public class ShangPinChuKu {
     public static By queding=By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[3]/div[1]/div/div[2]/div[4]/button[1]");
     //取消
     public static By quxiao=By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[3]/div[1]/div/div[2]/div[4]/button[2]");
-
 }
