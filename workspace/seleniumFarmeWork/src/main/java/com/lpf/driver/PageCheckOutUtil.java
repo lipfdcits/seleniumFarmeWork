@@ -9,7 +9,7 @@ public class PageCheckOutUtil {
     public static void checkout(String pageName,By clickElement,By secondElement,String expectText) throws InterruptedException {
 
         Action.click(clickElement);
-        String text = elementFind.findElement(secondElement).getText();
+        String text = Action.getText(secondElement);
         if(text.equals(expectText)){
             System.out.println("跳转---"+pageName+"---页面校验:成功");
         }else{

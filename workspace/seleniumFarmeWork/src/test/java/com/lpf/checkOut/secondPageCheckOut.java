@@ -292,21 +292,37 @@ public class secondPageCheckOut {
         Action.click(FaYao.fayao_zhongyao);
         PageCheckOutUtil.checkout("提交",FaYao.tijiao_zhongyao,FaYao.tijiaochenggong,"提交成功");
     }
-//    @Test
-//    public void fayao2() throws InterruptedException {
-//        //点击已发放
-//        PageCheckOutUtil.checkout("已发放",FaYao.yifafang_xiyao,FaYao.yaodan_xiyao,"药单");
-//        //点击药单
-//        PageCheckOutUtil.checkout("药单",FaYao.yaodan_xiyao,FaYao.fafangyaopin,"发放药品");
-//        //点击关闭
-//        PageCheckOutUtil.checkout("关闭",FaYao.guanbi_xiyao,FaYao.yifafang_xiyao,"已发放");
-//        //点击中药,点击已发放
-//        Action.click(FaYao.zhongyao);
-//        Action.click(FaYao.yifafang_zhongyao);
-//        //点击药单
-//        PageCheckOutUtil.checkout("药单",FaYao.yaodan_zhongyao,FaYao.shenhe,"审核：");
-//        //点击关闭
-//        PageCheckOutUtil.checkout("关闭",FaYao.guanbi_zhongyao,FaYao.yifafang_zhongyao,"已发放");
-//    }
+    @Test
+    public void fayao2() throws InterruptedException {
+        //点击已发放
+        PageCheckOutUtil.checkout("已发放",FaYao.yifafang_xiyao,FaYao.yaodan_xiyao,"药单");
+        //点击药单
+        PageCheckOutUtil.checkout("药单",FaYao.yaodan_xiyao,FaYao.fafangyaopin,"发放药品");
+        //点击关闭
+        PageCheckOutUtil.checkout("关闭",FaYao.guanbi_xiyao,FaYao.yifafang_xiyao,"已发放");
+        //点击中药,点击已发放
+        Action.click(FaYao.zhongyao);
+        Action.click(FaYao.yifafang_zhongyao);
+        //点击药单
+        PageCheckOutUtil.checkout("药单",FaYao.yaodan_zhongyao,FaYao.shenhe,"审核：");
+        //点击关闭
+        PageCheckOutUtil.checkout("关闭",FaYao.guanbi_zhongyao,FaYao.yifafang_zhongyao,"已发放");
+    }
 
+    @Test
+    public void zhenji() throws InterruptedException {
+        //点击开始执行
+        PageCheckOutUtil.checkout("开始执行",ZhenJi.kaishizhixing,ZhenJi.tijiao,"提交");
+        //点击取消
+        PageCheckOutUtil.checkout("取消",ZhenJi.quxiao, ZhenJi.daizhixing,"待执行");
+    }
+//    @Test
+//    public void zhenji() throws InterruptedException {
+//        //点击已执行
+//        PageCheckOutUtil.checkout("已执行",ZhenJi.yizhixing,ZhenJi.zhixingdan,"执行单");
+//        //点击执行单
+//        PageCheckOutUtil.checkout("执行单",ZhenJi.zhixingdan,ZhenJi.zhixingjilu,"执行记录");
+//        //点击关闭
+//        PageCheckOutUtil.checkout("关闭",ZhenJi.guanbi1,ZhenJi.daizhixing,"待执行");
+//    }
 }

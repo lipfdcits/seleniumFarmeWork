@@ -13,14 +13,25 @@ public class Action extends openBrowser {
     }
     //点击
     public static void click(By by) throws InterruptedException {
-        elementFind.findElement(by).click();
-        Thread.sleep(1000);
+        try {
+            elementFind.findElement(by).click();
+            Thread.sleep(1000);
+        }catch (Exception e){
+            System.out.println("元素"+by+"定位失败");
+            e.printStackTrace();
+        }
+
     }
     //文本框输入
     public static void sendText(By by,String text){
-        WebElement element= elementFind.findElement(by);
-        element.clear();
-        element.sendKeys(text);
+        try {
+            WebElement element= elementFind.findElement(by);
+            element.clear();
+            element.sendKeys(text);
+        }catch (Exception e){
+            System.out.println("元素"+by+"定位失败");
+            e.printStackTrace();
+        }
     }
     //打开网址
     public static void get(String url){
