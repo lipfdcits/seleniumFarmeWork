@@ -7,6 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Action extends openBrowser {
+    //刷新页面
+    public static void refresh(){
+        driver.navigate().refresh();
+    }
     //页面全屏
     public static void maxSize(){
         driver.manage().window().maximize();

@@ -5,6 +5,16 @@ import org.openqa.selenium.By;
 public class ShouKuan {
     //收款
     public static By shoukuan=By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[1]");
+    //一键收款
+    public static By yijianshoukuan=By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[2]/button[2]");
+    //第一个订单
+    public static By firstdingdan=By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[1]/div/label/span/span");
+    //支付宝支付
+    public static By zhifubaozhifu=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[2]/div[3]/div[2]");
+    //应收金额_一键支付
+    public static By yingshoujine_yijian=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[2]/div[1]/div[1]/div[2]");
+    //取消
+    public static By quxiaozhifu=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[3]/span/button[2]");
     //收款按钮
     public static By shoukuanButton= By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[3]/div[1]/div[3]/table/tbody/tr[1]/td[14]/div/div");
         //确认收款
@@ -14,7 +24,7 @@ public class ShouKuan {
         //收款-取消
         public static By quxiao=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[3]/span/button[2]");
         //应收金额
-        public static By zhifuchenggong=By.xpath("//*[@id=\"moneySuccess\"]/div[1]/div/div[2]/div/p");
+        public static By yingshoujine=By.xpath("//*[@id=\"moneySuccess\"]/div[1]/div/div[2]/div/p");
         //关闭
         public static By guanbi=By.xpath("//*[@id=\"moneySuccess\"]/div[1]/div/div[3]/span/button");
     //查询
