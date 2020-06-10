@@ -155,10 +155,10 @@ public class secondPageCheckOut {
                 break;
         }
     }
-    @AfterMethod
-    public void refresh(){
-        Action.refresh();
-    }
+//    @AfterMethod
+//    public void refresh(){
+//        Action.refresh();
+//    }
     @Test
     public void gailan() throws InterruptedException, AWTException {
         //点击预约挂号,查看并校验页面跳转
