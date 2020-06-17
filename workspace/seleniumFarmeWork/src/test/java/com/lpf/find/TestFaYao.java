@@ -43,8 +43,16 @@ public class TestFaYao {
         SwitchUtil.clickElement(firstPage.shouyinqu,firstPage.guahao);
         Action.click(GuaHao.xuanzekeshi);
         Action.click(By.xpath("/html/body/div[2]/div[1]/div[1]/ul/li[3]"));
-        //boolean a=elementFind.findElement(By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[1]/div/div[3]/div/div/div[1]/div[1]/div[1]")).isEnabled();
-        boolean a=elementFind.findElement(By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[1]/div/div[3]/div/div/div[1]/div[3]/div[1]")).isEnabled();
-        System.out.println(a);
+        Action.click(By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[1]/div/div[3]/div/div/div[1]/div[2]/div[1]"));
+        Action.sendText(By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[2]/form/div[1]/div/div/div/div/input"),"cs");
+        Action.click(By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[2]/form/div[2]/div/div/div/div[1]/input"));
+        Action.click(By.xpath("/html/body/div[3]/div[1]/div[1]/ul/li[1]"));
+        Action.sendText(By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[2]/form/div[3]/div[2]/div/div/input"),"20");
+        Action.sendText(By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[2]/form/div[4]/div/div/div/input"),"19111111111");
+        Action.click(By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[1]/div/div[3]/div/div/div[1]/div[3]/div[2]"));
+        Action.click(By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[4]/button"));
+        Thread.sleep(1000);
+        System.out.println(Action.isDisplay(By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[3]/span/button[1]")));
     }
+
 }

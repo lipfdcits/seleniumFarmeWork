@@ -39,6 +39,7 @@ public class GuaHao {
     public static By shenfenzheng= By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[2]/form/div[5]/div/div/div/input");
     //收款
     public static By shoukuan= By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[4]/button");
+
         //收款确定
         public static By quedingshoukuan=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[3]/span/button[1]");
         //收款取消
@@ -46,8 +47,10 @@ public class GuaHao {
         //关闭
         public static By guanbi=By.xpath("//*[@id=\"moneySuccess\"]/div[1]/div/div[3]/span/button");
     //挂号日期
-    public static By guahaoriqi= By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[1]/div/div[3]/div/div/div[1]/div[2]/div[2]");
+    public static By guahaoriqi= By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[1]/div/div[3]/div/div/div[1]/div[2]/div[1]");
     //上下周
     public static By shangxiazhou= By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[1]/div/div[3]/button");
+    //未选时间,提示信息
+    public static By tishi=By.xpath("/html/body/div[3]");
 
 }

@@ -38,18 +38,17 @@ public class GuaHaoLiuCheng {
 
         for (int i = 2; i < JxlFun.readRows("C:\\Users\\青小果6\\Desktop\\GuaHao.xls","Sheet1")+1; i++) {
             //点击选择诊室
-            //Action.click(GuaHao.xuanzekeshi);
+            Action.click(GuaHao.xuanzekeshi);
             //点击选择医生
-            Action.click(GuaHao.xuanzeyisheng);
-            Thread.sleep(1000);
+            //Action.click(GuaHao.xuanzeyisheng);
+            //Thread.sleep(1000);
             //选择耳鼻喉科
-            //Action.click(GuaHao.erbihouke);
+            Action.click(GuaHao.erbihouke);
             //选择妇科
             //Action.click(GuaHao.fuke);
             //选择医生
-            Action.click(By.xpath("/html/body/div[2]/div[1]/div[1]/ul/li[6]"));
-            //选择挂号日期
-            Action.click(GuaHao.guahaoriqi);
+            //Action.click(By.xpath("/html/body/div[2]/div[1]/div[1]/ul/li[6]"));
+
             //输入姓名
             Action.sendText(GuaHao.name,JxlFun.readText("C:\\Users\\青小果6\\Desktop\\GuaHao.xls","Sheet1",i,1));
             //点击性别
@@ -72,10 +71,21 @@ public class GuaHaoLiuCheng {
 //            }
             //输入身份证号
             //Action.sendText(GuaHao.shenfenzheng,"110101199003079016");
-            //点击收款
-            Action.click(GuaHao.shoukuan);
-            //点击确定
-            Action.click(GuaHao.quedingshoukuan);
+
+            for (int j = 7; j < JxlFun.readRows("C:\\Users\\青小果6\\Desktop\\GuaHao.xls","Sheet4")+1;j++) {
+                //选择挂号日期
+                Action.click(By.xpath(JxlFun.readText("C:\\Users\\青小果6\\Desktop\\GuaHao.xls", "Sheet4", j, 1)));
+                //点击收款
+                Action.click(GuaHao.shoukuan);
+                //判断"确定"按钮是否存在
+                if (Action.isDisplay(GuaHao.quedingshoukuan)) {
+                    //点击确定
+                    Action.click(GuaHao.quedingshoukuan);
+                    break;
+                }else {
+                    continue;
+                }
+            }
             //点击关闭
             Action.click(GuaHao.guanbi);
             //刷新页面
