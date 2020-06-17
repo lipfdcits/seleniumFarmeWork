@@ -7,6 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Action extends openBrowser {
+    //判断元素是否可操作
+    public static void isable(){
+        
+    }
     //刷新页面
     public static void refresh(){
         driver.navigate().refresh();
@@ -65,6 +69,11 @@ public class Action extends openBrowser {
             list.add(text);
         }
         return list;
+    }
+    //判断页面元素是否存在
+    public static boolean isDisplay(By by){
+        boolean panduan = driver.findElement(by).isDisplayed();
+        return panduan;
     }
 
 }

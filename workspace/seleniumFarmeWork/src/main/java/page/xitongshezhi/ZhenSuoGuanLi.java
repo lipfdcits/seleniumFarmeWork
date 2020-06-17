@@ -46,13 +46,20 @@ public class ZhenSuoGuanLi {
     //查询按钮
     public static By chaxunButton=By.xpath("//*[@id=\"pane-scheduling\"]/div/div/div[1]/button");
     //日期
-    public static By riqi=By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[5]/div");
+    public static By riqi=By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[2]/td[3]");
     //接诊人数
     public static By jiezhenrenshu=By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[4]/div/div[2]/div/form/div[3]/div/div[2]/div/input");
     //确定
     public static By queding=By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[4]/div/div[2]/div/div[2]/button[1]");
     //取消
     public static By quxiao=By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[4]/div/div[2]/div/div[2]/button[2]");
+    //时间
+    public static By shijian=By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[2]/table/thead/tr/td[1]");
+    //排班完成后提示
+    public static By tishi=By.xpath("/html/body/div[2]");
+    //返回
+    public static By fanhui=By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[1]/div[2]/button");
+
 
 
 

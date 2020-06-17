@@ -39,7 +39,7 @@ public class elementFind extends openBrowser {
     public static WebElement findElement(final By by){
         WebElement webElement=null;
         try {
-            webElement=new WebDriverWait(driver,10).until(new ExpectedCondition<WebElement>() {
+            webElement=new WebDriverWait(driver,10).until(new ExpectedCondition<WebElement>(){
                 public WebElement apply(WebDriver driver) {
                     return driver.findElement(by);
                 }

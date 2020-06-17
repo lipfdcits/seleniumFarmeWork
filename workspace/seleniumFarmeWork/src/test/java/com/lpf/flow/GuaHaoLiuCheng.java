@@ -1,20 +1,21 @@
 package com.lpf.flow;
 
-import com.lpf.driver.Action;
-import com.lpf.driver.SwitchUtil;
-import com.lpf.driver.elementFind;
-import com.lpf.driver.login;
+import com.lpf.driver.*;
+import jxl.read.biff.BiffException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.SourceType;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import page.firstPage;
 import page.selectHospital;
+import page.shouyinqu.GuaHao;
 import page.xitongshezhi.ZhenSuoGuanLi;
+import test.JxlFun;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.Random;
 
 public class GuaHaoLiuCheng {
 
@@ -25,76 +26,89 @@ public class GuaHaoLiuCheng {
         Action.click(selectHospital.zhensuo1);
     }
     //关闭浏览器
-    @AfterTest
-    public void closed() throws InterruptedException {
-        Action.closed();
-    }
+//    @AfterTest
+//    public void closed() throws InterruptedException {
+//        Action.closed();
+//    }
     @Test
-    public void GuaHaoFlow() throws InterruptedException {
-        //点击诊所管理
-        SwitchUtil.clickElement(firstPage.xitongshezhi, firstPage.zhensuoguanli);
-        //遍历
-        List<WebElement> list = elementFind.findElements(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div/div/div[1]/div/div/div/div"));
-//        System.out.println(list.size());
-        for (int i = 0; i < list.size(); i++) {
-            String text = list.get(i).getText();
-//            System.out.println(text);
-            if (text.equals("排班设置")) {
-                Action.click(ZhenSuoGuanLi.paibanshezhi);
-                break;
+    public void GuaHaoFlow() throws InterruptedException, IOException, BiffException {
+
+        //点击挂号
+        SwitchUtil.clickElement(firstPage.shouyinqu,firstPage.guahao);
+
+        for (int i = 2; i < JxlFun.readRows("C:\\Users\\青小果6\\Desktop\\GuaHao.xls","Sheet1")+1; i++) {
+            //点击选择诊室
+            //Action.click(GuaHao.xuanzekeshi);
+            //点击选择医生
+            Action.click(GuaHao.xuanzeyisheng);
+            Thread.sleep(1000);
+            //选择耳鼻喉科
+            //Action.click(GuaHao.erbihouke);
+            //选择妇科
+            //Action.click(GuaHao.fuke);
+            //选择医生
+            Action.click(By.xpath("/html/body/div[2]/div[1]/div[1]/ul/li[6]"));
+            //选择挂号日期
+            Action.click(GuaHao.guahaoriqi);
+            //输入姓名
+            Action.sendText(GuaHao.name,JxlFun.readText("C:\\Users\\青小果6\\Desktop\\GuaHao.xls","Sheet1",i,1));
+            //点击性别
+            Action.click(GuaHao.gender);
+            //点击女或男
+            if ((RandomTel.random() % 2) == 1) {
+                Action.click(GuaHao.woman);
             } else {
-                continue;
+                Action.click(GuaHao.man);
             }
-        }
-//        //点击排班时间
-//        Action.click(ZhenSuoGuanLi.paibanshijian);
-//        //点击日期
-//        Action.click(By.xpath("//*[@id=\"app\"]/div/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[6]/div"));
-
-//        List<WebElement> list1 = elementFind.findElements(By.xpath("//*[@id=\"pane-scheduling\"]/div/div/div[2]/div[3]/table/tbody/tr[5]/td"));
-//        for (int i = 0; i < list1.size(); i++) {
-//            String text1 = list1.get(i).getText();
-//            System.out.println(text1);
-//            if (text1.equals("李鹏飞")) {
-//                Action.click(ZhenSuoGuanLi.paibanshijian);
-//                break;
-//            } else {
-//                continue;
+            //输入年龄
+            Action.sendText(GuaHao.birthday,JxlFun.readText("C:\\Users\\青小果6\\Desktop\\GuaHao.xls","Sheet1",i,3));
+            //输入手机号
+            String tel="139"+ RandomTel.randomTel(9);
+            Action.sendText(GuaHao.tel,tel);
+//            String telText= Action.getText(GuaHao.tel);
+//            while (telText.length()!=11){
+//                String tel2="139"+ RandomTel.randomTel(8);
+//                Action.sendText(GuaHao.tel,tel2);
 //            }
-//        }
-        //点击排班设置后查询
-        Action.sendText(ZhenSuoGuanLi.chaxun,"李鹏飞");
-        //点击查询
-        Action.click(ZhenSuoGuanLi.chaxunButton);
-        //点击排班时间
-        Action.click(ZhenSuoGuanLi.paibanshijian1);
-        //点击日期
-        Action.click(ZhenSuoGuanLi.riqi);
-        //点击接诊
-        Action.click(ZhenSuoGuanLi.jiezhen);
-        //点击接诊诊室
-        Action.click(ZhenSuoGuanLi.jiezhenzhenshi);
-//        List<WebElement> list2=elementFind.findElements(By.xpath("/html/body/div[3]/div[1]/div[1]/ul"));
-//        System.out.println(list2.size());
-//        for (int i = 0; i < list2.size(); i++) {
-//            String text2=list2.get(i).getText();
-//            System.out.println(text2);
-//        }
-        //点击诊室
-        Action.click(By.cssSelector("body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(2)"));
-        //填写接诊人数
-        Action.sendText(ZhenSuoGuanLi.jiezhenrenshu,"100");
-//        //点击取消
-//        Action.click(ZhenSuoGuanLi.quxiao);
-        //点击确认
-        Action.click(ZhenSuoGuanLi.queding);
-
-        //html/body/div[3]/div[1]/div[1]/ul/li[1]/span
-        //html/body/div[3]/div[1]/div[1]/ul/li[2]/span
-
-
+            //输入身份证号
+            //Action.sendText(GuaHao.shenfenzheng,"110101199003079016");
+            //点击收款
+            Action.click(GuaHao.shoukuan);
+            //点击确定
+            Action.click(GuaHao.quedingshoukuan);
+            //点击关闭
+            Action.click(GuaHao.guanbi);
+            //刷新页面
+            Action.refresh();
+        }
     }
+
+
+
+
+
+//    @Test
+//    public void find(){
+//        List<WebElement> list= elementFind.findElements(By.xpath("//*[@id=\"app\"]/div/div[2]/div[1]/div[1]/div[1]/div/ul/div"));
+//        for (int i = 0; i < list.size(); i++) {
+//            String text=list.get(i).getText();
+//            System.out.println(text);
+//        }
+//    }
+//    @Test
+//    public void find2(){
+//        List<WebElement> list2=elementFind.findElements(By.xpath("//*[@id=\"app\"]/div/div[2]/div[1]/div[1]/div[1]/div/ul/div[1]/li/ul/div"));
+//        for (int i = 0; i < list2.size(); i++) {
+//            String text=list2.get(i).getText();
+//            System.out.println(text);
+//        }
+//    }
+
+
+
 }
+
+
 
 
 //*[@id="pane-scheduling"]/div/div/div[2]/div[3]/table/tbody/tr[1]/td[7]/div/span

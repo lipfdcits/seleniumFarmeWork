@@ -1,17 +1,15 @@
 package com.lpf.driver;
 
-import com.lpf.driver.logger.LoggerControler;
-
 import java.io.File;
 
-import static com.lpf.driver.logger.LoggerControler.getLogger;
+
 
 
 /**
  * Created by lenovo on 2016/11/10.
  */
 public class MyFile {
-    final static LoggerControler log= getLogger(MyFile.class);
+
     //判断文件是否存在
     public static boolean fileExist(String filePath){
         return new File(filePath).exists();
@@ -21,7 +19,7 @@ public class MyFile {
         if (!MyFile.fileExist(filePath)){
             File file=new File(filePath);
             file.mkdir();
-            log.info("new folder successful");
+
         }
     }
     //删除目录以及目录下所有的文件和文件夹

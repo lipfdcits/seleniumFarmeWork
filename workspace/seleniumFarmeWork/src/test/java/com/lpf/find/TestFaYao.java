@@ -1,6 +1,7 @@
 package com.lpf.find;
 
 import com.lpf.driver.Action;
+import com.lpf.driver.SwitchUtil;
 import com.lpf.driver.elementFind;
 import com.lpf.driver.login;
 import org.openqa.selenium.By;
@@ -12,6 +13,7 @@ import org.testng.annotations.Test;
 import page.chuangkouqu.FaYao;
 import page.firstPage;
 import page.selectHospital;
+import page.shouyinqu.GuaHao;
 
 public class TestFaYao {
 
@@ -36,5 +38,13 @@ public class TestFaYao {
         System.out.println(panduan);
         Action.click(FaYao.guanbi_xiyao);
     }
-
+    @Test
+    public void guahaoriqi() throws InterruptedException {
+        SwitchUtil.clickElement(firstPage.shouyinqu,firstPage.guahao);
+        Action.click(GuaHao.xuanzekeshi);
+        Action.click(By.xpath("/html/body/div[2]/div[1]/div[1]/ul/li[3]"));
+        //boolean a=elementFind.findElement(By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[1]/div/div[3]/div/div/div[1]/div[1]/div[1]")).isEnabled();
+        boolean a=elementFind.findElement(By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[1]/div/div[3]/div/div/div[1]/div[3]/div[1]")).isEnabled();
+        System.out.println(a);
+    }
 }

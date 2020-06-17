@@ -1,7 +1,6 @@
 package com.lpf.driver;
 
 
-import com.lpf.driver.logger.LoggerControler;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +15,7 @@ import java.io.IOException;
  * Created by lenovo on 2016/11/12.必须要继承SeleniumDrivers
  */
 public class ScreenShot extends elementFind {
-    static final LoggerControler log = LoggerControler.getLogger(ScreenShot.class);
+    //static final LoggerControler log = LoggerControler.getLogger(ScreenShot.class);
     static String path = System.getProperties().getProperty("user.dir") + "/error/";
     /**
      * 错误截图，通过日期命名的截图
@@ -36,7 +35,7 @@ public class ScreenShot extends elementFind {
             FileUtils.copyFile(file,new File(myPath + "/" +times+".jpg"));
           // FileUtils.copyFile(file,new File(myPath + "/" + DateFormat.format(DateFormat.REPORT_CSV_FORMAT) + ".png"));
         } catch (IOException e) {
-            log.severe("截图失败！！");
+            //log.severe("截图失败！！");
             e.printStackTrace();
         }
     }
@@ -49,10 +48,10 @@ public class ScreenShot extends elementFind {
         try {
             MyFile myFile = new MyFile();
             myFile.createFile1(path + DateFormat.format(DateFormat.CHECK_LOG_FORMAT));
-            log.info(DateFormat.format(DateFormat.ZH_DATE_FORMAT));
+            //log.info(DateFormat.format(DateFormat.ZH_DATE_FORMAT));
             FileUtils.copyFile(file,new File(path + DateFormat.format(DateFormat.CHECK_LOG_FORMAT) + "/" + name + ".jpg"));
         } catch (IOException e) {
-            log.severe("截图失败！！");
+            //log.severe("截图失败！！");
             e.printStackTrace();
         }
     }
