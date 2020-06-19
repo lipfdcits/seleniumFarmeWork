@@ -69,4 +69,6 @@ public class ShouKuan {
         public static By liliao= By.xpath("/html/body/div[5]/div[1]/div[1]/ul/li[9]");
     //查询条件
     public static By chaxuntiaojian= By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[2]/div[4]/input");
+    //全选
+    public static By quanxuan=By.xpath("//*[@id=\"receiptList\"]/div[1]/div/div[3]/div[1]/div[2]/table/thead/tr/th[1]/div/label/span/span");
 }

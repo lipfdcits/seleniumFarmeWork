@@ -15,4 +15,6 @@ public class selectHospital {
     public static By zhensuo1= By.xpath("//*[@id=\"app\"]/div/div[2]/div/div/div[1]/div[2]/div[1]/div/div/div");
     //诊所二
     public static By LiPengFeideceshizhensuo= By.xpath("//*[@id=\"app\"]/div/div[2]/div/div/div[1]/div[2]/div[1]/div/div/div[3]");
+    //诊所三
+    public static By zhenshuo3=By.xpath("//*[@id=\"app\"]/div/div[2]/div/div/div[1]/div[2]/div[1]/div/div/div[4]");
 }
