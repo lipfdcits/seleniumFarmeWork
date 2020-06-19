@@ -7,9 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Action extends openBrowser {
+
     //判断元素是否可操作
-    public static void isable(){
-        
+    public static boolean isable(By by){
+
+        return elementFind.findElement(by).isEnabled();
     }
     //刷新页面
     public static void refresh(){

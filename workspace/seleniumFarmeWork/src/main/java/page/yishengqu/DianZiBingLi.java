@@ -30,7 +30,7 @@ public class DianZiBingLi {
     //发病日期
     public static By fabingriqi= By.xpath("//*[@id=\"pane-record\"]/form/div[2]/div[1]/div[2]/div[2]/div/div/div[1]/input");
     //选择日期
-    public static By xuanzeriqi= By.xpath("/html/body/div[8]/div[1]/div/div[2]/table[1]/tbody/tr[4]/td[6]");
+    public static By xuanzeriqi= By.xpath("/html/body/div[4]/div[1]/div/div[2]/table[1]/tbody/tr[3]/td[2]/div/span");
     //是否传染
     public static By shifouchuanran= By.xpath("//*[@id=\"pane-record\"]/form/div[2]/div[1]/div[2]/div[3]/div/div/div/svg[2]");
     //体温
@@ -59,4 +59,21 @@ public class DianZiBingLi {
     public static By xiugai= By.xpath("//*[@id=\"pane-record\"]/form/div[2]/div[1]/div[2]/button");
     //查看历史病历
     public static By chakan= By.xpath("//*[@id=\"cardHistory\"]/div[2]/p[3]/span");
+    //保存
+    public static By baocunbingli=By.xpath("//*[@id=\"pane-record\"]/form/div[2]/div[1]/div[8]/button");
+    //请输入姓名
+    public static By qingshuruxingming=By.xpath("//*[@id=\"pane-record\"]/form/div[1]/div[2]/div[1]/div/div/div[2]");
+    //请输入身份证号
+    public static By qingshurushenfenzhenghao=By.xpath("//*[@id=\"pane-record\"]/form/div[1]/div[2]/div[4]/div/div/div[2]");
+    //请输入手机号码
+    public static By qingshurushoujihaoma=By.xpath("//*[@id=\"pane-record\"]/form/div[1]/div[3]/div[1]/div/div/div[2]");
+    //请输入主诉内容
+    public static By qingshuruzhusuneirong=By.xpath("//*[@id=\"pane-record\"]/form/div[2]/div[1]/div[2]/div[1]/div/div/div[3]");
+    //请填写诊断信息
+    public static By qingtianxiezhenduanxinxi=By.xpath("//*[@id=\"pane-record\"]/form/div[2]/div[1]/div[6]/div/div/div/div[2]");
+    //请选择发病时间
+    public static By qingxuanzefabingshijian=By.xpath("//*[@id=\"pane-record\"]/form/div[2]/div[1]/div[2]/div[2]/div/div/div[2]");
+    //身份证号
+    public static By shenfenzhenghao=By.xpath("//*[@id=\"pane-record\"]/form/div[1]/div[2]/div[4]/div/div/div[1]/input");
+
 }

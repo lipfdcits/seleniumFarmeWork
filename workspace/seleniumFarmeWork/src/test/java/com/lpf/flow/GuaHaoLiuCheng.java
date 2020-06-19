@@ -3,21 +3,19 @@ package com.lpf.flow;
 import com.lpf.driver.*;
 import jxl.read.biff.BiffException;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import page.firstPage;
 import page.selectHospital;
 import page.shouyinqu.GuaHao;
-import page.xitongshezhi.ZhenSuoGuanLi;
 import test.JxlFun;
 
 import java.io.IOException;
-import java.util.List;
-import java.util.Random;
+
+//挂号流程,挂号日期未自动选择,后续优化,目前手动更改第73行代码调整至对应日期可自动挂号
 
 public class GuaHaoLiuCheng {
+    String exclePath=System.getProperty("user.dir")+"\\TestExcle\\GuaHao.xls";
 
     //登录成功后页面跳转检验
     @BeforeTest
@@ -36,7 +34,7 @@ public class GuaHaoLiuCheng {
         //点击挂号
         SwitchUtil.clickElement(firstPage.shouyinqu,firstPage.guahao);
 
-        for (int i = 2; i < JxlFun.readRows("C:\\Users\\青小果6\\Desktop\\GuaHao.xls","Sheet1")+1; i++) {
+        for (int i = 2; i < JxlFun.readRows(exclePath,"Sheet1")+1; i++) {
             //点击选择诊室
             Action.click(GuaHao.xuanzekeshi);
             //点击选择医生
@@ -50,44 +48,43 @@ public class GuaHaoLiuCheng {
             //Action.click(By.xpath("/html/body/div[2]/div[1]/div[1]/ul/li[6]"));
 
             //输入姓名
-            Action.sendText(GuaHao.name,JxlFun.readText("C:\\Users\\青小果6\\Desktop\\GuaHao.xls","Sheet1",i,1));
+            Action.sendText(GuaHao.name,JxlFun.readText(exclePath,"Sheet1",i,1));
             //点击性别
             Action.click(GuaHao.gender);
             //点击女或男
-            if ((RandomTel.random() % 2) == 1) {
+            if ((RanDom.randomSix() % 2) == 1) {
                 Action.click(GuaHao.woman);
             } else {
                 Action.click(GuaHao.man);
             }
             //输入年龄
-            Action.sendText(GuaHao.birthday,JxlFun.readText("C:\\Users\\青小果6\\Desktop\\GuaHao.xls","Sheet1",i,3));
+            Action.sendText(GuaHao.birthday,JxlFun.readText(exclePath,"Sheet1",i,3));
             //输入手机号
-            String tel="139"+ RandomTel.randomTel(9);
+            String tel="139"+ RanDom.randomTel(9);
             Action.sendText(GuaHao.tel,tel);
 //            String telText= Action.getText(GuaHao.tel);
 //            while (telText.length()!=11){
-//                String tel2="139"+ RandomTel.randomTel(8);
+//                String tel2="139"+ RanDom.randomTel(8);
 //                Action.sendText(GuaHao.tel,tel2);
 //            }
             //输入身份证号
             //Action.sendText(GuaHao.shenfenzheng,"110101199003079016");
 
-            for (int j = 7; j < JxlFun.readRows("C:\\Users\\青小果6\\Desktop\\GuaHao.xls","Sheet4")+1;j++) {
+            for (int j = 9; j < JxlFun.readRows(exclePath,"Sheet4")+1;j++) {
                 //选择挂号日期
-                Action.click(By.xpath(JxlFun.readText("C:\\Users\\青小果6\\Desktop\\GuaHao.xls", "Sheet4", j, 1)));
+                Action.click(By.xpath(JxlFun.readText(exclePath, "Sheet4", j, 1)));
                 //点击收款
                 Action.click(GuaHao.shoukuan);
-                //判断"确定"按钮是否存在
-                if (Action.isDisplay(GuaHao.quedingshoukuan)) {
+                Thread.sleep(2000);
+                //判断"确定"按钮是否存在 (此处待优化)
+                if(Action.isDisplay(GuaHao.quedingshoukuan)) {
                     //点击确定
                     Action.click(GuaHao.quedingshoukuan);
+                    //点击关闭
+                    Action.click(GuaHao.guanbi);
                     break;
-                }else {
-                    continue;
                 }
             }
-            //点击关闭
-            Action.click(GuaHao.guanbi);
             //刷新页面
             Action.refresh();
         }

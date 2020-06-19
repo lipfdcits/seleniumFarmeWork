@@ -39,7 +39,8 @@ public class GuaHao {
     public static By shenfenzheng= By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[3]/div[2]/form/div[5]/div/div/div/input");
     //收款
     public static By shoukuan= By.xpath("//*[@id=\"docRegistered\"]/div[1]/div/div[4]/button");
-
+        //收款明细
+        public static By shoukuanmingxi=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[2]/div[4]");
         //收款确定
         public static By quedingshoukuan=By.xpath("//*[@id=\"moneyConfirm\"]/div[1]/div/div[3]/span/button[1]");
         //收款取消

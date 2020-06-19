@@ -103,16 +103,14 @@ public class PaiBanLIuCheng {
                 if(Action.isDisplay(ZhenSuoGuanLi.quxiao)){
                     Action.click(ZhenSuoGuanLi.quxiao);
                 }else {
+                    Action.click(ZhenSuoGuanLi.fanhui);
                     //排班--当前时间
                     break loop2;
                     //排班--本周所有时间
                     //continue;
                 }
-                Action.refresh();
             }
-            Action.click(ZhenSuoGuanLi.fanhui);
-
-
+            //Action.refresh();
         }
 
 
