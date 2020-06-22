@@ -1,10 +1,10 @@
 package test.excel;
 
 
+import com.lpf.driver.tools.JxlFun;
 import jxl.read.biff.BiffException;
 import jxl.write.WriteException;
 import org.testng.annotations.Test;
-import test.JxlFun;
 
 import java.io.IOException;
 import java.util.Random;
@@ -18,7 +18,7 @@ public class testExcel {
 
     @Test
     public void testReadText() throws IOException, BiffException {
-        String a=JxlFun.readText("C:\\Users\\青小果6\\Desktop\\testExcel.xls","Sheet1",2,1);
+        String a= JxlFun.readText("C:\\Users\\青小果6\\Desktop\\testExcel.xls","Sheet1",2,1);
         System.out.println(a);
     }
 

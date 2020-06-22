@@ -4,6 +4,7 @@ import com.lpf.driver.Action;
 import com.lpf.driver.SwitchUtil;
 import com.lpf.driver.elementFind;
 import com.lpf.driver.login;
+import com.lpf.driver.tools.JxlFun;
 import jxl.read.biff.BiffException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -12,7 +13,6 @@ import org.testng.annotations.Test;
 import page.firstPage;
 import page.selectHospital;
 import page.xitongshezhi.ZhenSuoGuanLi;
-import test.JxlFun;
 
 import java.io.IOException;
 import java.util.List;

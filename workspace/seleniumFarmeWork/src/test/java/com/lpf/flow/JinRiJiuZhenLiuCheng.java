@@ -1,18 +1,15 @@
 package com.lpf.flow;
 
 import com.lpf.driver.*;
+import com.lpf.driver.tools.JxlFun;
 import jxl.read.biff.BiffException;
-import org.omg.PortableInterceptor.ACTIVE;
 import org.openqa.selenium.By;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import page.firstPage;
 import page.selectHospital;
-import page.shouyinqu.ShouKuan;
 import page.yishengqu.DianZiBingLi;
 import page.yishengqu.JinRiJiuZhen;
-import test.JxlFun;
 
 import java.io.IOException;
 

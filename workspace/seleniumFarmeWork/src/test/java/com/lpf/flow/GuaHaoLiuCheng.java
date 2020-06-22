@@ -1,6 +1,7 @@
 package com.lpf.flow;
 
 import com.lpf.driver.*;
+import com.lpf.driver.tools.JxlFun;
 import jxl.read.biff.BiffException;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeTest;
@@ -8,7 +9,6 @@ import org.testng.annotations.Test;
 import page.firstPage;
 import page.selectHospital;
 import page.shouyinqu.GuaHao;
-import test.JxlFun;
 
 import java.io.IOException;
 
@@ -58,7 +58,7 @@ public class GuaHaoLiuCheng {
                 Action.click(GuaHao.man);
             }
             //输入年龄
-            Action.sendText(GuaHao.birthday,JxlFun.readText(exclePath,"Sheet1",i,3));
+            Action.sendText(GuaHao.birthday, JxlFun.readText(exclePath,"Sheet1",i,3));
             //输入手机号
             String tel="139"+ RanDom.randomTel(9);
             Action.sendText(GuaHao.tel,tel);
