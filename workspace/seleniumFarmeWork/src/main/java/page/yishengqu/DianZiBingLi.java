@@ -30,7 +30,7 @@ public class DianZiBingLi {
     //发病日期
     public static By fabingriqi= By.xpath("//*[@id=\"pane-record\"]/form/div[2]/div[1]/div[2]/div[2]/div/div/div[1]/input");
     //选择日期
-    public static By xuanzeriqi= By.xpath("/html/body/div[4]/div[1]/div/div[2]/table[1]/tbody/tr[3]/td[2]/div/span");
+    public static By xuanzeriqi= By.xpath("/html/body/div[4]/div[1]/div/div[2]/table[1]/tbody/tr[3]/td[2]/div");
     //是否传染
     public static By shifouchuanran= By.xpath("//*[@id=\"pane-record\"]/form/div[2]/div[1]/div[2]/div[3]/div/div/div/svg[2]");
     //体温

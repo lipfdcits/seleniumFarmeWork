@@ -31,9 +31,9 @@ public class ShouKuanLiuCheng {
         Action.click(ShouKuan.shoukuanButton);
         //点击确定
         Action.click(ShouKuan.queren);
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         //点击打印小票确定按钮
-        windowsClick.windowsC();
+        windowsClick.windowsC("\\TestExcle\\打印.exe");
         //点击关闭
         Action.click(ShouKuan.guanbi);
     }
