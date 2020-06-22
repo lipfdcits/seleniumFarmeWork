@@ -31,7 +31,7 @@ public class TestReportHtmlType extends TestListenerAdapter{
 	 */
 	@Override
 	public void onStart(ITestContext testContext) {
-		File htmlReportDir = new File("test-output/customize-report");
+		File htmlReportDir = new File("com.lpf.test-output/customize-report");
 		if (!htmlReportDir.exists()) {
 			htmlReportDir.mkdirs();
 		}
@@ -167,7 +167,7 @@ public class TestReportHtmlType extends TestListenerAdapter{
 	 * 日期：
 	 */
 	public void takeScreentShot(ITestResult iTestResult) {
-		String SCREEN_SHOT_PATH = "test-output/screen-shot";
+		String SCREEN_SHOT_PATH = "com.lpf.test-output/screen-shot";
 		String SCREEN_SHOT_NAME = iTestResult.getName()+".jpg";
 		File dir = new File(SCREEN_SHOT_PATH);
 		if (!dir.exists()) {

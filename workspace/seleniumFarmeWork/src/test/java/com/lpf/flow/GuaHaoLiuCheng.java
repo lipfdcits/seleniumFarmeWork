@@ -15,10 +15,10 @@ import java.io.IOException;
 //挂号流程,挂号日期未自动选择,后续优化,目前手动更改第73行代码调整至对应日期可自动挂号
 
 public class GuaHaoLiuCheng {
-    String exclePath=System.getProperty("user.dir")+"\\TestExcle\\GuaHao.xls";
+    static String exclePath=System.getProperty("user.dir")+"\\TestExcle\\GuaHao.xls";
 
     //登录成功后页面跳转检验
-    @BeforeTest
+    @Test
     public void loginPage() throws InterruptedException {
         login.loginAction("chrome","https://testsaas.qingxiaoguo.com","15110403429","123456");
         Action.click(selectHospital.zhensuo1);
@@ -29,11 +29,10 @@ public class GuaHaoLiuCheng {
 //        Action.closed();
 //    }
     @Test
-    public void GuaHaoFlow() throws InterruptedException, IOException, BiffException {
-
+    public static void GuaHaoFlow() throws InterruptedException, IOException, BiffException {
         //点击挂号
         SwitchUtil.clickElement(firstPage.shouyinqu,firstPage.guahao);
-
+        //遍历
         for (int i = 2; i < JxlFun.readRows(exclePath,"Sheet1")+1; i++) {
             //点击选择诊室
             Action.click(GuaHao.xuanzekeshi);
@@ -70,7 +69,7 @@ public class GuaHaoLiuCheng {
             //输入身份证号
             //Action.sendText(GuaHao.shenfenzheng,"110101199003079016");
 
-            for (int j = 9; j < JxlFun.readRows(exclePath,"Sheet4")+1;j++) {
+            for (int j = 3; j < JxlFun.readRows(exclePath,"Sheet4")+1;j++) {
                 //选择挂号日期
                 Action.click(By.xpath(JxlFun.readText(exclePath, "Sheet4", j, 1)));
                 //点击收款

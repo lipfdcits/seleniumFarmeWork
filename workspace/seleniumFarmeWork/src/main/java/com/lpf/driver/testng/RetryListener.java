@@ -10,7 +10,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
 /**
- * RetryListener for each test method.
+ * RetryListener for each com.lpf.test method.
  * @author kevinkong
  *
  */

@@ -29,7 +29,7 @@ public class TestReportExcelType extends TestListenerAdapter{
 	 */
 	@Override
 	public void onStart(ITestContext testContext) {
-		File reportDir = new File("test-output/customize-report");
+		File reportDir = new File("com.lpf.test-output/customize-report");
 		if (!reportDir.exists()) {
 			reportDir.mkdirs();
 		}
@@ -144,7 +144,7 @@ public class TestReportExcelType extends TestListenerAdapter{
 	 * 日期：
 	 */
 	public void takeScreentShot(ITestResult iTestResult) {
-		String SCREEN_SHOT_PATH = "test-output/screen-shot";
+		String SCREEN_SHOT_PATH = "com.lpf.test-output/screen-shot";
 		String SCREEN_SHOT_NAME = iTestResult.getName()+".jpg";
 		File dir = new File(SCREEN_SHOT_PATH);
 		if (!dir.exists()) {

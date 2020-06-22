@@ -27,7 +27,7 @@ public class JinRiJiuZhenLiuCheng {
 //    }
 
     @Test
-    public void JiuZhenflow() throws InterruptedException, IOException, BiffException {
+    public static void JiuZhenflow() throws InterruptedException, IOException, BiffException {
         String path=System.getProperty("user.dir")+"\\TestExcle\\随机数据.xls";
         //点击今日就诊
         SwitchUtil.clickElement(firstPage.yishengqu,firstPage.jinrijiuzhen);

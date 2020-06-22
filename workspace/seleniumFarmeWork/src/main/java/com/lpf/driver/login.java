@@ -2,6 +2,7 @@ package com.lpf.driver;
 
 import org.openqa.selenium.WebDriver;
 import page.loginPage;
+import page.selectHospital;
 
 public class login extends openBrowser {
 
@@ -18,7 +19,8 @@ public class login extends openBrowser {
         Action.sendText(loginPage.password,pwd);
         //点击登录按钮
         Action.click(loginPage.login);
-
+        //选择医院
+        Action.click(selectHospital.zhensuo1);
     }
 
 }

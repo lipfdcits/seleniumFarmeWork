@@ -20,7 +20,7 @@ public class ScreentShot {
 	 */
 	public static void takeScreentShot(String method) {
 		System.out.println("method：" + method);
-		String SCREEN_SHOT_PATH = "test-output/screen-shot/" + method;
+		String SCREEN_SHOT_PATH = "com.lpf.test-output/screen-shot/" + method;
 //		String SCREEN_SHOT_NAME = iTestResult.getName()+"--" + Test_Inov.method+".jpg";
 		String SCREEN_SHOT_NAME = method + "--" + getNowDate2()+".jpg";
 		File dir = new File(SCREEN_SHOT_PATH);

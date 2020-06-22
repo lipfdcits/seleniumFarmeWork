@@ -20,7 +20,7 @@ import java.util.List;
 public class PaiBanLIuCheng {
     //登录成功后页面跳转检验
     @BeforeTest
-    public void loginPage() throws InterruptedException {
+    public static void loginPage() throws InterruptedException {
         login.loginAction("chrome", "https://testsaas.qingxiaoguo.com", "15110403429", "123456");
         Action.click(selectHospital.zhensuo1);
     }
@@ -31,7 +31,8 @@ public class PaiBanLIuCheng {
 //        Action.closed();
 //    }
     @Test
-    public void PaiBanFlow() throws InterruptedException, IOException, BiffException {
+    public static void PaiBanFlow() throws InterruptedException, IOException, BiffException {
+        String path=System.getProperty("user.dir")+"\\TestExcle\\GuaHao.xls";
         String tishi = null;
         //点击诊所管理
         SwitchUtil.clickElement(firstPage.xitongshezhi, firstPage.zhensuoguanli);
@@ -66,18 +67,18 @@ public class PaiBanLIuCheng {
 //            }
 //        }
         loop1:
-        for (int nameId = 2; nameId < JxlFun.readRows("C:\\Users\\青小果6\\Desktop\\GuaHao.xls", "Sheet3"); nameId++) {
+        for (int nameId = 2; nameId < JxlFun.readRows(path, "Sheet3")+1; nameId++) {
 
             //点击排班设置后查询
-            Action.sendText(ZhenSuoGuanLi.chaxun, JxlFun.readText("C:\\Users\\青小果6\\Desktop\\GuaHao.xls", "Sheet3",nameId,1));
+            Action.sendText(ZhenSuoGuanLi.chaxun, JxlFun.readText(path, "Sheet3",nameId,1));
             //点击查询
             Action.click(ZhenSuoGuanLi.chaxunButton);
             //点击排班时间
             Action.click(ZhenSuoGuanLi.paibanshijian1);
             //点击日期
             loop2:
-            for (int i = 2; i < JxlFun.readRows("C:\\Users\\青小果6\\Desktop\\GuaHao.xls", "Sheet2")+1; i++) {
-                Action.click(By.xpath(JxlFun.readText("C:\\Users\\青小果6\\Desktop\\GuaHao.xls", "Sheet2", i, 1)));
+            for (int i = 2; i < JxlFun.readRows(path, "Sheet2")+1; i++) {
+                Action.click(By.xpath(JxlFun.readText(path, "Sheet2", i, 1)));
                 //点击接诊
                 Action.click(ZhenSuoGuanLi.jiezhen);
                 //点击接诊诊室

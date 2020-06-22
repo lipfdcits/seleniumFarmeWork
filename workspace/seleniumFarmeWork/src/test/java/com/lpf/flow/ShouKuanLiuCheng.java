@@ -27,14 +27,16 @@ public class ShouKuanLiuCheng {
     public static void ShouKuanFlow() throws InterruptedException {
         //点击收款模块
         Action.click(firstPage.shoukuan);
-        //点击收款
-        Action.click(ShouKuan.shoukuanButton);
-        //点击确定
-        Action.click(ShouKuan.queren);
-        Thread.sleep(2000);
-        //点击打印小票确定按钮
-        windowsClick.windowsC("\\TestExcle\\打印.exe");
-        //点击关闭
-        Action.click(ShouKuan.guanbi);
+        while (Action.isDisplay(ShouKuan.shoukuanButton)){
+            //点击收款
+            Action.click(ShouKuan.shoukuanButton);
+            //点击确定
+            Action.click(ShouKuan.queren);
+            Thread.sleep(2000);
+            //点击打印小票确定按钮
+            windowsClick.windowsC("\\TestExcle\\打印.exe");
+            //点击关闭
+            Action.click(ShouKuan.guanbi);
+        }
     }
 }

@@ -68,7 +68,7 @@ public class Browser{
 		//通过配置参数禁止data;的出现
 		//options.addArguments("--user-data-dir=C:/Users/Administrator/AppData/Local/Google/Chrome/User Data/Default");
 		//通过配置参数删除“您使用的是不受支持的命令行标记：--ignore-certificate-errors。稳定性和安全性会有所下降。”提示
-		//options.addArguments("--start-maximized", "allow-running-insecure-content", "--test-type");
+		//options.addArguments("--start-maximized", "allow-running-insecure-content", "--com.lpf.test-type");
 		//启动Chrome浏览器
 		WebDriver driver = new ChromeDriver(options);
 		//谷歌窗口最大化

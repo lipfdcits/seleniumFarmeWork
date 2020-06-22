@@ -49,9 +49,9 @@ public class TestResultListener extends TestListenerAdapter {
 	public void onFinish(ITestContext testContext) {
 		super.onFinish(testContext);
 
-		// List of test results which we will delete later
+		// List of com.lpf.test results which we will delete later
 		ArrayList<ITestResult> testsToBeRemoved = new ArrayList<ITestResult>();
-		// collect all id's from passed test
+		// collect all id's from passed com.lpf.test
 		Set<Integer> passedTestIds = new HashSet<Integer>();
 		for (ITestResult passedTest : testContext.getPassedTests().getAllResults()) {
 			logger.info("PassedTests = " + passedTest.getName());
@@ -79,9 +79,9 @@ public class TestResultListener extends TestListenerAdapter {
 			// id = class + method + dataprovider
 			int failedTestId = getId(failedTest);
 
-			// if we saw this test as a failed test before we mark as to be
+			// if we saw this com.lpf.test as a failed com.lpf.test before we mark as to be
 			// deleted
-			// or delete this failed test if there is at least one passed
+			// or delete this failed com.lpf.test if there is at least one passed
 			// version
 			if (failedTestIds.contains(failedTestId) || passedTestIds.contains(failedTestId) ||
 					skipTestIds.contains(failedTestId)) {
