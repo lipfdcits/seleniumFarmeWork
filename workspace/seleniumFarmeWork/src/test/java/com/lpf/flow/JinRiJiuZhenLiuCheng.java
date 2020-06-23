@@ -63,7 +63,7 @@ public class JinRiJiuZhenLiuCheng {
             Action.click(JinRiJiuZhen.xiyaochufang);
             //输入西药药品名称
             Action.sendText(JinRiJiuZhen.yaopinmingcheng,"999");
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             Action.click(By.xpath("/html/body/div[2]/div[1]/div[1]/ul/li[1]"));
             //输入天数
             Action.sendText(JinRiJiuZhen.tianshu,"10");
@@ -77,8 +77,10 @@ public class JinRiJiuZhenLiuCheng {
             //点击确定完成就诊
             Action.click(JinRiJiuZhen.quedingwanchengjiuzhen);
             Thread.sleep(2000);
-            //打印处方单
-            windowsClick.windowsC("\\TestExcle\\打印处方单.exe");
+            //打印处方单（确定）
+//            windowsClick.windowsC("\\TestExcle\\打印处方单.exe");
+            //打印处方单（取消）
+            windowsClick.windowsC("\\TestExcle\\取消打印处方单.exe");
             Thread.sleep(2000);
             Action.refresh();
             Thread.sleep(3000);

@@ -1,9 +1,10 @@
 package com.lpf.find;
 
-import com.lpf.driver.Action;
-import com.lpf.driver.SwitchUtil;
-import com.lpf.driver.login;
+import com.lpf.driver.*;
 import org.omg.PortableInterceptor.ACTIVE;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -11,7 +12,10 @@ import page.firstPage;
 import page.selectHospital;
 import page.shouyinqu.ShouKuan;
 
-public class TestShouKuan {
+import java.awt.*;
+import java.awt.event.KeyEvent;
+
+public class TestShouKuan extends openBrowser {
     //登录
     @BeforeTest
     public void loginPage() throws InterruptedException {
@@ -24,9 +28,10 @@ public class TestShouKuan {
         Action.closed();
     }
     @Test
-    public void shoukuan() throws InterruptedException {
+    public void shoukuan() throws InterruptedException, AWTException {
         //点击收款模块
         SwitchUtil.clickElement(firstPage.shouyinqu,firstPage.shoukuan);
+        Thread.sleep(2000);
         //输入查询条件
         Action.sendText(ShouKuan.chaxuntiaojian,"证");
         //点击查询
@@ -42,6 +47,15 @@ public class TestShouKuan {
         while (Action.isDisplay(ShouKuan.shoukuanButton)){
             Action.click(ShouKuan.shoukuanButton);
         }
-
+//        //右键点击收款
+//        WebElement sk=driver.findElement(ShouKuan.shoukuanButton);
+//        Actions action=new Actions(driver);
+//        action.contextClick(sk).perform();
+//        //模拟键盘向下点击
+//        Robot robot=new Robot();
+//        robot.keyPress(KeyEvent.VK_DOWN);
+//        Thread.sleep(500);
+//        robot.keyPress(KeyEvent.VK_DOWN);
+//        Thread.sleep(3000);
     }
 }

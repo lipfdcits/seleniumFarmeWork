@@ -10,6 +10,10 @@ import page.firstPage;
 import page.selectHospital;
 import page.shouyinqu.ShouKuan;
 
+import javax.accessibility.Accessible;
+import java.awt.*;
+import java.awt.event.KeyEvent;
+
 public class ShouKuanLiuCheng {
     @BeforeTest
     public void loginPage() throws InterruptedException {
@@ -24,19 +28,43 @@ public class ShouKuanLiuCheng {
 //    }
 
     @Test
-    public static void ShouKuanFlow() throws InterruptedException {
+    public static void ShouKuanFlow() throws InterruptedException, AWTException {
+        Robot robot=new Robot();
         //点击收款模块
         Action.click(firstPage.shoukuan);
-        while (Action.isDisplay(ShouKuan.shoukuanButton)){
+        String text=Action.getText(ShouKuan.shoukuanButton);
+        while (text.equals("收款")){
+            Thread.sleep(3000);
             //点击收款
             Action.click(ShouKuan.shoukuanButton);
+            Thread.sleep(3000);
             //点击确定
             Action.click(ShouKuan.queren);
             Thread.sleep(2000);
+            //点击打印类型
+            windowsClick.windowsC("\\TestExcle\\点击打印名称.exe");
+            //Thread.sleep(1000);
+            robot.keyPress(KeyEvent.VK_DOWN);
+            Thread.sleep(500);
+            robot.keyPress(KeyEvent.VK_DOWN);
+            Thread.sleep(500);
+            robot.keyPress(KeyEvent.VK_DOWN);
+            Thread.sleep(500);
+            robot.keyPress(KeyEvent.VK_DOWN);
+            Thread.sleep(500);
+            robot.keyPress(KeyEvent.VK_DOWN);
+            Thread.sleep(500);
+            robot.keyPress(KeyEvent.VK_DOWN);
+            Thread.sleep(500);
+            robot.keyPress(KeyEvent.VK_DOWN);
+            Thread.sleep(500);
+            robot.keyPress(KeyEvent.VK_DOWN);
+            Thread.sleep(500);
             //点击打印小票确定按钮
             windowsClick.windowsC("\\TestExcle\\打印.exe");
             //点击关闭
             Action.click(ShouKuan.guanbi);
+            Thread.sleep(3000);
         }
     }
 }

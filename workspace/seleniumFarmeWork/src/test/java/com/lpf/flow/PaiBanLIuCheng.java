@@ -75,9 +75,9 @@ public class PaiBanLIuCheng {
             Action.click(ZhenSuoGuanLi.chaxunButton);
             //点击排班时间
             Action.click(ZhenSuoGuanLi.paibanshijian1);
-            //点击日期
             loop2:
             for (int i = 2; i < JxlFun.readRows(path, "Sheet2")+1; i++) {
+                //选择排班日期
                 Action.click(By.xpath(JxlFun.readText(path, "Sheet2", i, 1)));
                 //点击接诊
                 Action.click(ZhenSuoGuanLi.jiezhen);
@@ -104,13 +104,14 @@ public class PaiBanLIuCheng {
                 if(Action.isDisplay(ZhenSuoGuanLi.quxiao)){
                     Action.click(ZhenSuoGuanLi.quxiao);
                 }else {
-                    Action.click(ZhenSuoGuanLi.fanhui);
                     //排班--当前时间
+                    Action.click(ZhenSuoGuanLi.fanhui);
                     break loop2;
                     //排班--本周所有时间
                     //continue;
                 }
             }
+            //Action.click(ZhenSuoGuanLi.fanhui);
             //Action.refresh();
         }
 
